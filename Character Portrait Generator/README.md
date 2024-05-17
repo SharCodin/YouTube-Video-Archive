@@ -1,7 +1,3 @@
-Sure! Here's a README file for your project:
-
----
-
 # Character Portrait Generator with ComfyUI, Python, and WebSockets
 
 This repository contains the code and resources for building a Character Portrait Generator web application using ComfyUI, Python, and WebSockets. This project is designed to help you create character portraits through a web interface, progressing from a basic setup to more advanced features.
