@@ -3,7 +3,8 @@ import random
 
 import gradio as gr
 
-from advance import advance
+from advanced import advance
+from demo_app import advance_app
 from intermediate import intermediate
 from websockets_api import get_prompt_images
 
@@ -21,11 +22,11 @@ def process(positive):
 basic = gr.Interface(
     fn=process,
     inputs=[gr.Textbox(label="Positive Prompt: ")],
-    outputs=[gr.Gallery(label="Outputs: ")]
+    outputs=[gr.Gallery(label="Outputs: ", height=768)]
 )
 
-demo = gr.TabbedInterface(interface_list=[basic, intermediate, advance],
-                          tab_names=["Basic Workflow", "Intermediate Workflow", "Advance Workflow"])
+demo = gr.TabbedInterface(interface_list=[basic, intermediate, advance, advance_app()],
+                          tab_names=["Basic Workflow", "Intermediate Workflow", "Advanced Workflow", "Demo App"])
 
 demo.queue()
 demo.launch()

@@ -31,7 +31,7 @@
   },
   "4": {
     "inputs": {
-      "ckpt_name": "dreamshaper_8.safetensors"
+      "ckpt_name": "kakarot25DChichi_v2024.safetensors"
     },
     "class_type": "CheckpointLoaderSimple",
     "_meta": {
@@ -42,7 +42,7 @@
     "inputs": {
       "width": 512,
       "height": 768,
-      "batch_size": 1
+      "batch_size": 4
     },
     "class_type": "EmptyLatentImage",
     "_meta": {
