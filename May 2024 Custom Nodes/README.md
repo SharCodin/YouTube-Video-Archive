@@ -1,7 +1,7 @@
 1. [GITHUB ::: coolzilj/ComfyUI-Photopea: Edit images in the Photopea editor directly within ComfyUI.](https://github.com/coolzilj/ComfyUI-Photopea)
 2. [GITHUB ::: AonekoSS/ComfyUI-LoRA-Tuner](https://github.com/AonekoSS/ComfyUI-LoRA-Tuner)
 3. [GITHUB ::: ToonCrafter/ToonCrafter: a research paper for generative cartoon interpolation](https://github.com/ToonCrafter/ToonCrafter)
-	1. [GITHUB ::: AIGODLIKE/ComfyUI-ToonCrafter](https://github.com/AIGODLIKE/ComfyUI-ToonCrafter) - Released on June 2nd
+1. [GITHUB ::: AIGODLIKE/ComfyUI-ToonCrafter](https://github.com/AIGODLIKE/ComfyUI-ToonCrafter)
 4. [GITHUB ::: AIFSH/ComfyUI_V-Express](https://github.com/AIFSH/ComfyUI_V-Express)
 5. [GITHUB ::: alessandrozonta/ComfyUI-Layers: This custom node for ComfyUI allows you to create layers of an image based on input masks and save them into a PSD file.](https://github.com/alessandrozonta/ComfyUI-Layers)
 6. [GITHUB ::: Mason-McGough/ComfyUI-Mosaica: Create colorful mosaic images in ComfyUI by computing label images and applying lookup tables.](https://github.com/Mason-McGough/ComfyUI-Mosaica)
@@ -66,3 +66,4 @@
 16. [GITHUB ::: curiousjp/ComfyUI-MaskBatchPermutations: Permutes a mask batch to present possible additive combinations](https://github.com/curiousjp/ComfyUI-MaskBatchPermutations)
 17. [GITHUB ::: yuvraj108c/ComfyUI-Upscaler-Tensorrt: 3-4x faster ComfyUI Image Upscaling using Tensorrt, licensed under CC BY-NC-SA 4.0](https://github.com/yuvraj108c/ComfyUI-Upscaler-Tensorrt)
 18. [GITHUB ::: AIGODLIKE/ComfyUI-BlenderAI-node: Used for AI model generation, next-generation Blender rendering engine, texture enhancement&generation (based on ComfyUI)](https://github.com/AIGODLIKE/ComfyUI-BlenderAI-node)
+1. [GITHUB ::: huchenlei/ComfyUI_omost: ComfyUI implementation of Omost](https://github.com/huchenlei/ComfyUI_omost)
