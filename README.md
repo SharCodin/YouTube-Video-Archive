@@ -2,8 +2,11 @@
 A repo to store files and workflow I showcase in video.
 
 [YouTube Channel](https://www.youtube.com/@CodeCraftersCorner)
+[Support on Patreon](https://www.patreon.com/codecrafterscorner)
 
 ## Updates
+ - Add workflows for "Comparing PhotoMaker V1, V2, FaceID and InstantID"
+   - Link to video is here: https://youtu.be/xn0UNSz2yg4
  - Added workflows for February 19th, 2024 video on GPT + ComfyUI
  - Added (Complete) Character Portrait Generator App for:
     - [Part 1](https://youtu.be/kmZqoLJ2Dhk)
