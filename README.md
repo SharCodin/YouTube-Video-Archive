@@ -1,8 +1,8 @@
 # YouTube-Video-Archive
 A repo to store files and workflow I showcase in video.
 
-[YouTube Channel](https://www.youtube.com/@CodeCraftersCorner)
-[Support on Patreon](https://www.patreon.com/codecrafterscorner)
+- [YouTube Channel](https://www.youtube.com/@CodeCraftersCorner)
+- [Support on Patreon](https://www.patreon.com/codecrafterscorner)
 
 ## Updates
  - Add workflows for "Comparing PhotoMaker V1, V2, FaceID and InstantID"
