@@ -5,6 +5,7 @@ A repo to store files and workflow I showcase in video.
 - [Support on Patreon](https://www.patreon.com/codecrafterscorner)
 
 ## Updates
+ - Added Flux Updated workflow by XLabs-AI
  - Flux.1 schnell img2img added. 
   - Drag the output image to comfyui and test with the input image.
  - Add workflows for "Comparing PhotoMaker V1, V2, FaceID and InstantID"
