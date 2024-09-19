@@ -5,6 +5,8 @@ A repo to store files and workflow I showcase in video.
 - [Support on Patreon](https://www.patreon.com/codecrafterscorner)
 
 ## Updates
+ - Add SD1.5 Lora with Flux workflow.
+  - Link to video is here: https://youtu.be/03nGYqj4nOM
  - Added Flux Updated workflow by XLabs-AI
  - Flux.1 schnell img2img added. 
   - Drag the output image to comfyui and test with the input image.
