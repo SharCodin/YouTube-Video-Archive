@@ -5,6 +5,7 @@ A repo to store files and workflow I showcase in video.
 - [Support on Patreon](https://www.patreon.com/codecrafterscorner)
 
 ## Updates
+ - Add Flux ControlNet Upscaler Workflow
  - Add Flux ControlNet Inpainting workflow
    - Link: https://youtu.be/0XJrjDnGp8w
  - Add SD1.5 Lora with Flux workflow.
