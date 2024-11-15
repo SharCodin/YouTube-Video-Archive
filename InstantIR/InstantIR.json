@@ -1,0 +1,200 @@
+{
+  "last_node_id": 4,
+  "last_link_id": 3,
+  "nodes": [
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": {
+        "0": 570,
+        "1": 700
+      },
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "lady.png",
+        "image"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1420,
+        "1": 470
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 3
+        }
+      ],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "InstantIR_Sampler",
+      "pos": {
+        "0": 990,
+        "1": 480
+      },
+      "size": {
+        "0": 400,
+        "1": 510
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "InstantIR_MODEL",
+          "link": 1
+        },
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            3
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "InstantIR_Sampler"
+      },
+      "widgets_values": [
+        "Photorealistic, highly detailed, hyper detailed photo - realistic maximum detail, 32k, ultra HD, extreme meticulous detailing, skin pore detailing, hyper sharpness, perfect without deformations, taken using a Canon EOS R camera, Cinematic, High Contrast, Color Grading. ",
+        "blurry, out of focus, unclear, depth of field, over-smooth, sketch, oil painting, cartoon, CG Style, 3D render, unreal engine, dirty, messy, worst quality, low quality, frames, painting, illustration, drawing, art, watermark, signature, jpeg artifacts, deformed, lowres",
+        0,
+        "randomize",
+        20,
+        7,
+        false,
+        768,
+        768,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 1,
+      "type": "InstantIR_Loader",
+      "pos": {
+        "0": 360,
+        "1": 400
+      },
+      "size": {
+        "0": 570,
+        "1": 220
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "InstantIR_MODEL",
+          "links": [
+            1
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "InstantIR_Loader"
+      },
+      "widgets_values": [
+        "juggernautXL_juggXIByRundiffusion.safetensors",
+        "facebook/dinov2-large",
+        "models\\adapter.pt",
+        "models\\aggregator.pt",
+        "lcm\\SDXL\\pytorch_lora_weights.safetensors",
+        "models\\previewer_lora_weights.bin",
+        true
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "InstantIR_MODEL"
+    ],
+    [
+      2,
+      3,
+      0,
+      2,
+      1,
+      "IMAGE"
+    ],
+    [
+      3,
+      2,
+      0,
+      4,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9090909090909091,
+      "offset": [
+        -240.33982737538904,
+        -332.2774738150783
+      ]
+    }
+  },
+  "version": 0.4
+}

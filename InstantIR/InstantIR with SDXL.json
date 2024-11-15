@@ -1,0 +1,804 @@
+{
+  "last_node_id": 22,
+  "last_link_id": 25,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "InstantIR_Loader",
+      "pos": {
+        "0": 360,
+        "1": 400
+      },
+      "size": {
+        "0": 570,
+        "1": 220
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "InstantIR_MODEL",
+          "links": [
+            1
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "InstantIR_Loader"
+      },
+      "widgets_values": [
+        "juggernautXL_juggXIByRundiffusion.safetensors",
+        "facebook/dinov2-large",
+        "models\\adapter.pt",
+        "models\\aggregator.pt",
+        "lcm\\SDXL\\pytorch_lora_weights.safetensors",
+        "models\\previewer_lora_weights.bin",
+        true
+      ]
+    },
+    {
+      "id": 4,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1420,
+        "1": 470
+      },
+      "size": {
+        "0": 690,
+        "1": 630
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 3
+        }
+      ],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "Florence2ModelLoader",
+      "pos": {
+        "0": 170,
+        "1": 680
+      },
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora",
+          "type": "PEFTLORA",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Florence2ModelLoader"
+      },
+      "widgets_values": [
+        "Florence-2-base",
+        "fp16",
+        "sdpa"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 2250,
+        "1": 170
+      },
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 8
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 14,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            13
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 14,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 2260,
+        "1": 420
+      },
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            12
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 17,
+      "type": "VAEDecode",
+      "pos": {
+        "0": 3150,
+        "1": 290
+      },
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 15
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            17
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": {
+        "0": 170,
+        "1": 850
+      },
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2,
+            21
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "Konan.png",
+        "image"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "SaveImage",
+      "pos": {
+        "0": 3400,
+        "1": 290
+      },
+      "size": {
+        "0": 560,
+        "1": 600
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "Florence2Run",
+      "pos": {
+        "0": 530,
+        "1": 690
+      },
+      "size": {
+        "0": 400,
+        "1": 352
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 21
+        },
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            4,
+            14
+          ],
+          "slot_index": 2
+        },
+        {
+          "name": "data",
+          "type": "JSON",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Florence2Run"
+      },
+      "widgets_values": [
+        "",
+        "detailed_caption",
+        true,
+        false,
+        1024,
+        3,
+        true,
+        "",
+        786708728061904,
+        "fixed"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "InstantIR_Sampler",
+      "pos": {
+        "0": 990,
+        "1": 480
+      },
+      "size": {
+        "0": 400,
+        "1": 510
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "InstantIR_MODEL",
+          "link": 1
+        },
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 2
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 4,
+          "widget": {
+            "name": "prompt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            3,
+            23
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "InstantIR_Sampler"
+      },
+      "widgets_values": [
+        "Photorealistic, highly detailed, hyper detailed photo - realistic maximum detail, 32k, ultra HD, extreme meticulous detailing, skin pore detailing, hyper sharpness, perfect without deformations, taken using a Canon EOS R camera, Cinematic, High Contrast, Color Grading. ",
+        "blurry, out of focus, unclear, depth of field, over-smooth, sketch, oil painting, cartoon, CG Style, 3D render, unreal engine, dirty, messy, worst quality, low quality, frames, painting, illustration, drawing, art, watermark, signature, jpeg artifacts, deformed, lowres",
+        1017894817,
+        "fixed",
+        20,
+        7,
+        false,
+        512,
+        512,
+        0,
+        0.9,
+        1
+      ]
+    },
+    {
+      "id": 19,
+      "type": "VAEEncode",
+      "pos": {
+        "0": 2460,
+        "1": 480
+      },
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 25
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 19
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            20
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEEncode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 22,
+      "type": "ImageResize+",
+      "pos": {
+        "0": 2130,
+        "1": 640
+      },
+      "size": {
+        "0": 315,
+        "1": 218
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            25
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageResize+"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        "nearest",
+        "fill / crop",
+        "always",
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 1800,
+        "1": 310
+      },
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            10
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            8,
+            9
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            16,
+            19
+          ],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "juggernautXL_juggXIByRundiffusion.safetensors"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "KSampler",
+      "pos": {
+        "0": 2770,
+        "1": 240
+      },
+      "size": {
+        "0": 315,
+        "1": 262
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 10
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 13
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 12
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            15
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        863664244474520,
+        "fixed",
+        20,
+        6.5,
+        "dpmpp_2m",
+        "karras",
+        0.6
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "InstantIR_MODEL"
+    ],
+    [
+      2,
+      3,
+      0,
+      2,
+      1,
+      "IMAGE"
+    ],
+    [
+      3,
+      2,
+      0,
+      4,
+      0,
+      "IMAGE"
+    ],
+    [
+      4,
+      5,
+      2,
+      2,
+      2,
+      "STRING"
+    ],
+    [
+      6,
+      6,
+      0,
+      5,
+      1,
+      "FL2MODEL"
+    ],
+    [
+      8,
+      12,
+      1,
+      13,
+      0,
+      "CLIP"
+    ],
+    [
+      9,
+      12,
+      1,
+      14,
+      0,
+      "CLIP"
+    ],
+    [
+      10,
+      12,
+      0,
+      15,
+      0,
+      "MODEL"
+    ],
+    [
+      12,
+      14,
+      0,
+      15,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      13,
+      13,
+      0,
+      15,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      14,
+      5,
+      2,
+      13,
+      1,
+      "STRING"
+    ],
+    [
+      15,
+      15,
+      0,
+      17,
+      0,
+      "LATENT"
+    ],
+    [
+      16,
+      12,
+      2,
+      17,
+      1,
+      "VAE"
+    ],
+    [
+      17,
+      17,
+      0,
+      18,
+      0,
+      "IMAGE"
+    ],
+    [
+      19,
+      12,
+      2,
+      19,
+      1,
+      "VAE"
+    ],
+    [
+      20,
+      19,
+      0,
+      15,
+      3,
+      "LATENT"
+    ],
+    [
+      21,
+      3,
+      0,
+      5,
+      0,
+      "IMAGE"
+    ],
+    [
+      23,
+      2,
+      0,
+      22,
+      0,
+      "IMAGE"
+    ],
+    [
+      25,
+      22,
+      0,
+      19,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.35049389948139253,
+      "offset": [
+        94.28945959461433,
+        333.8887569996632
+      ]
+    }
+  },
+  "version": 0.4
+}
