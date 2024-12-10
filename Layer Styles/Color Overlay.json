@@ -1,0 +1,363 @@
+{
+  "last_node_id": 12,
+  "last_link_id": 25,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "LayerStyle: ColorOverlay V2",
+      "pos": [
+        150,
+        730
+      ],
+      "size": [
+        340.20001220703125,
+        170
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "background_image",
+          "type": "IMAGE",
+          "link": 22
+        },
+        {
+          "name": "layer_image",
+          "type": "IMAGE",
+          "link": 23
+        },
+        {
+          "name": "layer_mask",
+          "type": "MASK",
+          "link": 24,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            8
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LayerStyle: ColorOverlay V2"
+      },
+      "widgets_values": [
+        false,
+        "normal",
+        0,
+        "#000000"
+      ],
+      "color": "rgba(20, 95, 121, 0.7)"
+    },
+    {
+      "id": 10,
+      "type": "LoadImage",
+      "pos": [
+        -410,
+        250
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            20,
+            22
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_temp_ujtaq_00011_.png",
+        "image"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "LoadImage",
+      "pos": [
+        -420,
+        630
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            21,
+            23
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_temp_syrts_00002_.png",
+        "image"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "LoadImage",
+      "pos": [
+        -430,
+        1010
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            24,
+            25
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_temp_pabgn_00001_.png",
+        "image"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "LayerStyle: ColorOverlay",
+      "pos": [
+        180,
+        250
+      ],
+      "size": [
+        315,
+        170
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "background_image",
+          "type": "IMAGE",
+          "link": 20
+        },
+        {
+          "name": "layer_image",
+          "type": "IMAGE",
+          "link": 21
+        },
+        {
+          "name": "layer_mask",
+          "type": "MASK",
+          "link": 25,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            7
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LayerStyle: ColorOverlay"
+      },
+      "widgets_values": [
+        false,
+        "normal",
+        0,
+        "#000000"
+      ],
+      "color": "rgba(20, 95, 121, 0.7)"
+    },
+    {
+      "id": 7,
+      "type": "PreviewImage",
+      "pos": [
+        520,
+        250
+      ],
+      "size": [
+        210,
+        246
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 7
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 8,
+      "type": "PreviewImage",
+      "pos": [
+        520,
+        730
+      ],
+      "size": [
+        210,
+        246
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 8
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [
+      7,
+      1,
+      0,
+      7,
+      0,
+      "IMAGE"
+    ],
+    [
+      8,
+      2,
+      0,
+      8,
+      0,
+      "IMAGE"
+    ],
+    [
+      20,
+      10,
+      0,
+      1,
+      0,
+      "IMAGE"
+    ],
+    [
+      21,
+      11,
+      0,
+      1,
+      1,
+      "IMAGE"
+    ],
+    [
+      22,
+      10,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      23,
+      11,
+      0,
+      2,
+      1,
+      "IMAGE"
+    ],
+    [
+      24,
+      12,
+      1,
+      2,
+      2,
+      "MASK"
+    ],
+    [
+      25,
+      12,
+      1,
+      1,
+      2,
+      "MASK"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.675939695956245,
+      "offset": [
+        1207.9041939468786,
+        -32.008441141644
+      ]
+    }
+  },
+  "version": 0.4
+}
