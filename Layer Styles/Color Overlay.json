@@ -1,60 +1,7 @@
 {
-  "last_node_id": 12,
-  "last_link_id": 25,
+  "last_node_id": 13,
+  "last_link_id": 27,
   "nodes": [
-    {
-      "id": 2,
-      "type": "LayerStyle: ColorOverlay V2",
-      "pos": [
-        150,
-        730
-      ],
-      "size": [
-        340.20001220703125,
-        170
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "background_image",
-          "type": "IMAGE",
-          "link": 22
-        },
-        {
-          "name": "layer_image",
-          "type": "IMAGE",
-          "link": 23
-        },
-        {
-          "name": "layer_mask",
-          "type": "MASK",
-          "link": 24,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            8
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LayerStyle: ColorOverlay V2"
-      },
-      "widgets_values": [
-        false,
-        "normal",
-        0,
-        "#000000"
-      ],
-      "color": "rgba(20, 95, 121, 0.7)"
-    },
     {
       "id": 10,
       "type": "LoadImage",
@@ -96,6 +43,73 @@
       ]
     },
     {
+      "id": 8,
+      "type": "PreviewImage",
+      "pos": [
+        520,
+        730
+      ],
+      "size": [
+        210,
+        246
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 8
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 12,
+      "type": "LoadImage",
+      "pos": [
+        -430,
+        1010
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            25,
+            26
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_temp_pabgn_00001_.png",
+        "image"
+      ]
+    },
+    {
       "id": 11,
       "type": "LoadImage",
       "pos": [
@@ -107,7 +121,7 @@
         314
       ],
       "flags": {},
-      "order": 1,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -135,44 +149,31 @@
       ]
     },
     {
-      "id": 12,
-      "type": "LoadImage",
+      "id": 7,
+      "type": "PreviewImage",
       "pos": [
-        -430,
-        1010
+        520,
+        250
       ],
       "size": [
-        315,
-        314
+        210,
+        246
       ],
       "flags": {},
-      "order": 2,
+      "order": 5,
       "mode": 0,
-      "inputs": [],
-      "outputs": [
+      "inputs": [
         {
-          "name": "IMAGE",
+          "name": "images",
           "type": "IMAGE",
-          "links": [],
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [
-            24,
-            25
-          ],
-          "slot_index": 1
+          "link": 7
         }
       ],
+      "outputs": [],
       "properties": {
-        "Node name for S&R": "LoadImage"
+        "Node name for S&R": "PreviewImage"
       },
-      "widgets_values": [
-        "ComfyUI_temp_pabgn_00001_.png",
-        "image"
-      ]
+      "widgets_values": []
     },
     {
       "id": 1,
@@ -186,7 +187,7 @@
         170
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -222,64 +223,63 @@
       "widgets_values": [
         false,
         "normal",
-        0,
-        "#000000"
+        15,
+        "#5771D9"
       ],
       "color": "rgba(20, 95, 121, 0.7)"
     },
     {
-      "id": 7,
-      "type": "PreviewImage",
+      "id": 2,
+      "type": "LayerStyle: ColorOverlay V2",
       "pos": [
-        520,
-        250
-      ],
-      "size": [
-        210,
-        246
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 7
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 8,
-      "type": "PreviewImage",
-      "pos": [
-        520,
+        150,
         730
       ],
       "size": [
-        210,
-        246
+        340.20001220703125,
+        170
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
-          "name": "images",
+          "name": "background_image",
           "type": "IMAGE",
-          "link": 8
+          "link": 22
+        },
+        {
+          "name": "layer_image",
+          "type": "IMAGE",
+          "link": 23
+        },
+        {
+          "name": "layer_mask",
+          "type": "MASK",
+          "link": 26,
+          "shape": 7
         }
       ],
-      "outputs": [],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            8
+          ],
+          "slot_index": 0
+        }
+      ],
       "properties": {
-        "Node name for S&R": "PreviewImage"
+        "Node name for S&R": "LayerStyle: ColorOverlay V2"
       },
-      "widgets_values": []
+      "widgets_values": [
+        false,
+        "normal",
+        10,
+        "#CFE959"
+      ],
+      "color": "rgba(20, 95, 121, 0.7)"
     }
   ],
   "links": [
@@ -332,18 +332,18 @@
       "IMAGE"
     ],
     [
-      24,
-      12,
-      1,
-      2,
-      2,
-      "MASK"
-    ],
-    [
       25,
       12,
       1,
       1,
+      2,
+      "MASK"
+    ],
+    [
+      26,
+      12,
+      1,
+      2,
       2,
       "MASK"
     ]
@@ -352,10 +352,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.675939695956245,
+      "scale": 0.5987562277580097,
       "offset": [
-        1207.9041939468786,
-        -32.008441141644
+        874.1065577109846,
+        -68.23570611938469
       ]
     }
   },
