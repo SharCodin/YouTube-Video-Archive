@@ -27,6 +27,7 @@ This repository is a collection of ComfyUI workflows featured in my videos. Each
 ## Updates
 
 ### Recent Changes
+- **Enhance Flux Skin Contrast Upscaler** ([Uploading...]())
 - **ConDelta Workflows** ([Watch Video](https://youtu.be/D2pfch0Fmo4))
 - **Layer Styles Workflow** (in progress!)
 - Added workflows from the **LTX Video with Upscaler** ([Watch Video](https://youtu.be/AftEDVDhw3I))
@@ -79,6 +80,7 @@ Below is a categorized list of the workflows available in this repository:
 - Layer Styles Workflow
 - InstantIR Workflows
 - GPT + ComfyUI ([Watch Video](https://youtu.be/L6INgxlBi9o))
+- Skin Contrast Upscaler
 
 ---
 
