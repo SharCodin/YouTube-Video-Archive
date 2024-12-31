@@ -39,7 +39,7 @@ Refer to the commit history for a detailed list of changes.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/YouTube-Video-Archive.git
+   git clone https://github.com/SharCodin/YouTube-Video-Archive
    ```
 2. Open the desired workflow in ComfyUI.
 3. Follow the instructions or watch the corresponding video for guidance.
@@ -47,7 +47,7 @@ Refer to the commit history for a detailed list of changes.
 ---
 
 ## 2024 Updates
-- **Enhance Flux Skin Contrast Upscaler** ([Uploading...]())
+- **Enhance Flux Skin Contrast Upscaler** ([Watch Video](https://youtu.be/-W0EAA0-zos))
 - **ConDelta Workflows** ([Watch Video](https://youtu.be/D2pfch0Fmo4))
 - **Layer Styles Workflow** (in progress!)
 - Added workflows from the **LTX Video with Upscaler** ([Watch Video](https://youtu.be/AftEDVDhw3I))
