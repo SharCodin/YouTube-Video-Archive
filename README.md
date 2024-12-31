@@ -27,17 +27,9 @@ This repository is a collection of ComfyUI workflows featured in my videos. Each
 ## Updates
 
 ### Recent Changes
-- **Enhance Flux Skin Contrast Upscaler** ([Uploading...]())
-- **ConDelta Workflows** ([Watch Video](https://youtu.be/D2pfch0Fmo4))
-- **Layer Styles Workflow** (in progress!)
-- Added workflows from the **LTX Video with Upscaler** ([Watch Video](https://youtu.be/AftEDVDhw3I))
-- **Flux ControlNet Upscaler Workflow** ([Watch Video](https://youtu.be/c-xUonw1r9s))
-- **Flux ControlNet Inpainting Workflow** ([Watch Video](https://youtu.be/0XJrjDnGp8w))
-- **SD1.5 Lora with Flux Workflow** ([Watch Video](https://youtu.be/03nGYqj4nOM))
-- **Character Portrait Generator App:**
-  - [Part 1](https://youtu.be/kmZqoLJ2Dhk)
-  - [Part 2](https://youtu.be/1iPcRGyj7-E)
-  - [Part 3](https://youtu.be/zajODlpfOs4)
+- Added ComfyUI Tutorial: ControlNets and T2I Adapters for SD1.5 and SDXL
+- Added Category 2024 and 2025 for better organization
+
 
 Refer to the commit history for a detailed list of changes.
 
@@ -51,6 +43,21 @@ Refer to the commit history for a detailed list of changes.
    ```
 2. Open the desired workflow in ComfyUI.
 3. Follow the instructions or watch the corresponding video for guidance.
+
+---
+
+## 2024 Updates
+- **Enhance Flux Skin Contrast Upscaler** ([Uploading...]())
+- **ConDelta Workflows** ([Watch Video](https://youtu.be/D2pfch0Fmo4))
+- **Layer Styles Workflow** (in progress!)
+- Added workflows from the **LTX Video with Upscaler** ([Watch Video](https://youtu.be/AftEDVDhw3I))
+- **Flux ControlNet Upscaler Workflow** ([Watch Video](https://youtu.be/c-xUonw1r9s))
+- **Flux ControlNet Inpainting Workflow** ([Watch Video](https://youtu.be/0XJrjDnGp8w))
+- **SD1.5 Lora with Flux Workflow** ([Watch Video](https://youtu.be/03nGYqj4nOM))
+- **Character Portrait Generator App:**
+  - [Part 1](https://youtu.be/kmZqoLJ2Dhk)
+  - [Part 2](https://youtu.be/1iPcRGyj7-E)
+  - [Part 3](https://youtu.be/zajODlpfOs4)
 
 ---
 
