@@ -27,6 +27,7 @@ This repository is a collection of ComfyUI workflows featured in my videos. Each
 ## Updates
 
 ### Recent Changes
+- Added ComfyUI Product Display workflow. https://youtu.be/p-l7S5axYG4
 - Added ComfyUI Tutorial: ControlNets and T2I Adapters for SD1.5 and SDXL
 - Added Category 2024 and 2025 for better organization
 
