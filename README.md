@@ -27,7 +27,14 @@ This repository is a collection of ComfyUI workflows featured in my videos. Each
 ## Updates
 
 ### Recent Changes
+- Add Wan 2.2 Animate Workflows [Tutorial Video](https://youtu.be/j2j6jDr26S4)
+- Add SRPO Workflow [Tutorial Video](https://youtu.be/jXP-_29N_HI)
+- Add Qwen Image Edit Four Views Workflows [Tutorial Video](https://youtu.be/3ff9zna-7t0)
+- Add Photorestoration Workflow [Tutorial Video](https://youtu.be/JvZXiBi7chc)
+- Add Flux.1 Krea Dev Workflow [Tutorial Video](https://youtu.be/t1QDawNNdD4)
+- Add Choose your own adventure games Workflow [Tutorial Video](https://youtu.be/S65whozhZR4)
 - Add LTX Longer Video Workflow: https://youtu.be/O6LImWaKryg
+- Add ZenID Workflows [Tutorial Video](https://youtu.be/uHU5rtQu4jc)
 - Add ComfyUI Product Display workflow. https://youtu.be/p-l7S5axYG4
 - Add ComfyUI Tutorial: ControlNets and T2I Adapters for SD1.5 and SDXL: https://youtu.be/7P5fN35FN1s
 - Add Category 2024 and 2025 for better organization
@@ -48,7 +55,7 @@ Refer to the commit history for a detailed list of changes.
 
 ---
 
-## 2024 Updates
+## Previous Updates
 - **Enhance Flux Skin Contrast Upscaler** ([Watch Video](https://youtu.be/-W0EAA0-zos))
 - **ConDelta Workflows** ([Watch Video](https://youtu.be/D2pfch0Fmo4))
 - **Layer Styles Workflow** (in progress!)
@@ -67,29 +74,66 @@ Refer to the commit history for a detailed list of changes.
 
 Below is a categorized list of the workflows available in this repository:
 
-### Flux Series
-- Flux ControlNet Upscaler
-- Flux ControlNet Inpainting
-- Flux Promoting Workflow
-- Flux Img2Img
+### 2024
+- **Character Portrait Generator**
+  - `advance_workflow.json`
+  - `basic_workflow.json`
+  - `intermediate_workflow.json`
+- **Flux Text-to-Image Workflows**
+  - `01. Flux text to image - Dev.json`
+  - `02. Flux text to image - Schnell.json`
+  - `03. Flux text to image - Schnell - 12GB VRAM.json`
+  - `04. Flux text to image - Dev-fp8.json`
+  - `05. Flux text to image - Schnell-fp8.json`
+  - `06. Flux text to image - NF4 - v2.json`
+  - `07. Flux text to image - Dev-GGUF - Q2.json`
+  - `08. Flux text to image - Dev-GGUF - Q8.json`
+  - `09. Flux text to image - Schnell-GGUF - Q2.json`
+  - `10. Flux text to image - Schnell-GGUF - Q8.json`
+- **HunYuanVideo**
+  - `Hunyuan Video - Txt2Video - gguf workflow.json`
+- **InstantIR**
+  - `InstantIR with Flux.json`
+  - `InstantIR with SDXL.json`
+  - `InstantIR.json`
+- **Layer Styles**
+  - `Color Overlay.json`
+- **LTX Video**
+  - `LTX Video with Upscale.json`
+- **Misc Workflows**
+  - `AI_Influencer.json`
+  - `InstantStyle-in-ComfyUI.json`
+- **Skin Upgrade**
+  - `Deblurr-SkinContrast-Upto-4k.json`
+  - `Upscaler with Skin contrast.json`
 
-### Stable Diffusion
-- SD1.5 Lora with Flux
-- SD3.5 Large Test
-- SD3.5 Turbo Test Results
+### 2025
+- **Flux.1 Krea Dev**
+  - `_flux1_krea_dev.json`
+- **LTX_Longer_Video_Generation**
+  - `1-LTX_Video_txt2vid.json`
+  - `2-LTX_Video_img2vid.json`
+  - `3-Combining LTX_Videos.json`
+- **Product Display**
+  - `Contextual Inpainting Workflow.json`
+- **Qwen-Image-Edit-Four-Views**
+  - `Qwen_Image_Edit-four-views-left-right-asymmetry.json`
+  - `Qwen_Image_Edit-four-views.json`
+- **SRPO**
+  - `comfyui_SRPO-workflow-quantization-with-image-to-image.json`
+- **Wan2.2 Animate resources**
+  - `video_wan2_2_14B_animate-with-image-resize-video-extend.json`
+  - `video_wan2_2_14B_animate-with-image-resize.json`
+- **ZenID**
+  - `ZenID_FaceSwap - SDXL.json`
 
-### Character Portrait Generator
-- Complete app across three parts ([Part 1](https://youtu.be/kmZqoLJ2Dhk), [Part 2](https://youtu.be/1iPcRGyj7-E), [Part 3](https://youtu.be/zajODlpfOs4))
-
-### Comparison Workflows
-- Comparing PhotoMaker V1, V2, FaceID, and InstantID ([Video](https://youtu.be/xn0UNSz2yg4))
-
-### Experimental Workflows
-- ConDelta Workflows
-- Layer Styles Workflow
-- InstantIR Workflows
-- GPT + ComfyUI ([Watch Video](https://youtu.be/L6INgxlBi9o))
-- Skin Contrast Upscaler
+### ComfyUI tutorials
+- **ControlNets**
+  - `ControlNet_Preprocessors.json`
+- **ControlNets/4-Flux**
+  - `Flux ControlNet Canny.json`
+  - `Flux ControlNet Depth.json`
+  - `Flux ControlNet to SDXL to Refiner to Upscale to Flux.json`
 
 ---
 
@@ -102,4 +146,3 @@ Contributions are welcome! If you have a workflow you'd like to share or suggest
 ## License
 
 This repository is licensed under the [MIT License](LICENSE).
-
