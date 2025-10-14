@@ -27,6 +27,7 @@ This repository is a collection of ComfyUI workflows featured in my videos. Each
 ## Updates
 
 ### Recent Changes
+- srpo as face detailer [Tutorial Video](https://youtu.be/Jzr5Z3lAg-4)
 - Add Wan 2.2 Animate Workflows [Tutorial Video](https://youtu.be/j2j6jDr26S4)
 - Add SRPO Workflow [Tutorial Video](https://youtu.be/jXP-_29N_HI)
 - Add Qwen Image Edit Four Views Workflows [Tutorial Video](https://youtu.be/3ff9zna-7t0)
@@ -106,8 +107,15 @@ Below is a categorized list of the workflows available in this repository:
 - **Skin Upgrade**
   - `Deblurr-SkinContrast-Upto-4k.json`
   - `Upscaler with Skin contrast.json`
+- **Workflows**
+  - `AI_Influencer.json`
+  - `InstantStyle-in-ComfyUI.json`
 
 ### 2025
+- **Character animation - 360 rotation with Wan2.2 AIO**
+  - `Wan2.2 All-in-One 360 animation - with subgraphs.json`
+  - `Wan2.2 All-in-One 360 animation - without subgraphs - Local Prompts.json`
+  - `Wan2.2 All-in-One 360 animation - without subgraphs.json`
 - **Flux.1 Krea Dev**
   - `_flux1_krea_dev.json`
 - **LTX_Longer_Video_Generation**
