@@ -276,13 +276,13 @@
         405.70733642578125
       ],
       "flags": {},
-      "order": 4,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
       "properties": {},
       "widgets_values": [
-        "# 📌 ComfyUI Workflow Notes\n\n**Author:** Sharvin Suntoobacus  \n**YouTube Channel:** [CodeCraftersCorner](https://www.youtube.com/@CodeCraftersCorner)  \n**Patreon:** [Support on Patreon](https://www.patreon.com/codecrafterscorner)  \n\n---\n\n## ℹ️ About This Workflow\nThis workflow was created and shared by **Sharvin Suntoobacus** for the community.  \nThanks for using it and supporting the work!\n\n---\n\n## 🎥 Tutorial / Guide\nIf available, you can watch the video here:  \n[Watch on YouTube](PLACEHOLDER_VIDEO_LINK)\n\n---\n\n## 💡 Notes\n- Please credit when sharing.  \n- Supporting helps me create more workflows and guides.  \n\n---\n\n🙏 Thank you for your support!\n"
+        "# 📌 ComfyUI Workflow Notes\n\n**Author:** Sharvin Suntoobacus  \n**YouTube Channel:** [CodeCraftersCorner](https://www.youtube.com/@CodeCraftersCorner)  \n**Patreon:** [Support on Patreon](https://www.patreon.com/codecrafterscorner)  \n\n---\n\n## ℹ️ About This Workflow\nThis workflow was created and shared by **Sharvin Suntoobacus** for the community.  \nThanks for using it and supporting the work!\n\n---\n\n## 🎥 Tutorial / Guide\nIf available, you can watch the video here:  \n[Watch on YouTube](https://youtu.be/pxXqs0O2-4U)\n\n---\n\n## 💡 Notes\n- Please credit when sharing.  \n- Supporting helps me create more workflows and guides.  \n\n---\n\n🙏 Thank you for your support!\n"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -299,7 +299,7 @@
         400
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 4,
       "inputs": [],
       "outputs": [],
@@ -322,7 +322,7 @@
         360
       ],
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1146,7 +1146,7 @@
         580
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1264,7 +1264,7 @@
         258
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -12854,13 +12854,13 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.20086298320163656,
+      "scale": 0.15888039124567158,
       "offset": [
-        3118.2447847556623,
-        1208.7011213619874
+        3389.4561917841024,
+        1869.7841758935965
       ]
     },
-    "frontendVersion": "1.28.7",
+    "frontendVersion": "1.28.8",
     "ue_links": [],
     "links_added_by_ue": [],
     "VHS_latentpreview": false,
