@@ -362,7 +362,7 @@
         420
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -644,13 +644,13 @@
         405.70733642578125
       ],
       "flags": {},
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
       "properties": {},
       "widgets_values": [
-        "# 📌 ComfyUI Workflow Notes\n\n**Author:** Sharvin Suntoobacus  \n**YouTube Channel:** [CodeCraftersCorner](https://www.youtube.com/@CodeCraftersCorner)  \n**Patreon:** [Support on Patreon](https://www.patreon.com/codecrafterscorner)  \n\n---\n\n## ℹ️ About This Workflow\nThis workflow was created and shared by **Sharvin Suntoobacus** for the community.  \nThanks for using it and supporting the work!\n\n---\n\n## 🎥 Tutorial / Guide\nIf available, you can watch the video here:  \n[Watch on YouTube](PLACEHOLDER_VIDEO_LINK)\n\n---\n\n## 💡 Notes\n- Please credit when sharing.  \n- Supporting helps me create more workflows and guides.  \n\n---\n\n🙏 Thank you for your support!\n"
+        "# 📌 ComfyUI Workflow Notes\n\n**Author:** Sharvin Suntoobacus  \n**YouTube Channel:** [CodeCraftersCorner](https://www.youtube.com/@CodeCraftersCorner)  \n**Patreon:** [Support on Patreon](https://www.patreon.com/codecrafterscorner)  \n\n---\n\n## ℹ️ About This Workflow\nThis workflow was created and shared by **Sharvin Suntoobacus** for the community.  \nThanks for using it and supporting the work!\n\n---\n\n## 🎥 Tutorial / Guide\nIf available, you can watch the video here:  \n[Watch on YouTube](https://youtu.be/koZj1nl3TLQ)\n\n---\n\n## 💡 Notes\n- Please credit when sharing.  \n- Supporting helps me create more workflows and guides.  \n\n---\n\n🙏 Thank you for your support!\n"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1054,9 +1054,7 @@
         "ver": "0.3.67",
         "Node name for S&R": "GetImageSize"
       },
-      "widgets_values": [
-        "width: 1024, height: 1024\n batch size: 1"
-      ]
+      "widgets_values": []
     },
     {
       "id": 46,
@@ -1140,7 +1138,8 @@
         "cnr_id": "comfy-core",
         "ver": "0.3.67",
         "Node name for S&R": "InvertMask"
-      }
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -1453,10 +1452,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.3616043870954851,
+      "scale": 0.9379086525679972,
       "offset": [
-        443.7769017470587,
-        302.32240405319885
+        415.4861435266344,
+        36.29088189241364
       ]
     },
     "frontendVersion": "1.28.8",
