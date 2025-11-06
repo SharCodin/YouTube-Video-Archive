@@ -27,19 +27,7 @@ This repository is a collection of ComfyUI workflows featured in my videos. Each
 ## Updates
 
 ### Recent Changes
-- srpo as face detailer [Tutorial Video](https://youtu.be/Jzr5Z3lAg-4)
-- Add Wan 2.2 Animate Workflows [Tutorial Video](https://youtu.be/j2j6jDr26S4)
-- Add SRPO Workflow [Tutorial Video](https://youtu.be/jXP-_29N_HI)
-- Add Qwen Image Edit Four Views Workflows [Tutorial Video](https://youtu.be/3ff9zna-7t0)
-- Add Photorestoration Workflow [Tutorial Video](https://youtu.be/JvZXiBi7chc)
-- Add Flux.1 Krea Dev Workflow [Tutorial Video](https://youtu.be/t1QDawNNdD4)
-- Add Choose your own adventure games Workflow [Tutorial Video](https://youtu.be/S65whozhZR4)
-- Add LTX Longer Video Workflow: https://youtu.be/O6LImWaKryg
-- Add ZenID Workflows [Tutorial Video](https://youtu.be/uHU5rtQu4jc)
-- Add ComfyUI Product Display workflow. https://youtu.be/p-l7S5axYG4
-- Add ComfyUI Tutorial: ControlNets and T2I Adapters for SD1.5 and SDXL: https://youtu.be/7P5fN35FN1s
-- Add Category 2024 and 2025 for better organization
-
+- Add AIO GGUF asymmetry configuration file [Tutorial Video]()
 
 Refer to the commit history for a detailed list of changes.
 
@@ -57,6 +45,18 @@ Refer to the commit history for a detailed list of changes.
 ---
 
 ## Previous Updates
+- srpo as face detailer [Tutorial Video](https://youtu.be/Jzr5Z3lAg-4)
+- Add Wan 2.2 Animate Workflows [Tutorial Video](https://youtu.be/j2j6jDr26S4)
+- Add SRPO Workflow [Tutorial Video](https://youtu.be/jXP-_29N_HI)
+- Add Qwen Image Edit Four Views Workflows [Tutorial Video](https://youtu.be/3ff9zna-7t0)
+- Add Photorestoration Workflow [Tutorial Video](https://youtu.be/JvZXiBi7chc)
+- Add Flux.1 Krea Dev Workflow [Tutorial Video](https://youtu.be/t1QDawNNdD4)
+- Add Choose your own adventure games Workflow [Tutorial Video](https://youtu.be/S65whozhZR4)
+- Add LTX Longer Video Workflow: https://youtu.be/O6LImWaKryg
+- Add ZenID Workflows [Tutorial Video](https://youtu.be/uHU5rtQu4jc)
+- Add ComfyUI Product Display workflow. https://youtu.be/p-l7S5axYG4
+- Add ComfyUI Tutorial: ControlNets and T2I Adapters for SD1.5 and SDXL: https://youtu.be/7P5fN35FN1s
+- Add Category 2024 and 2025 for better organization
 - **Enhance Flux Skin Contrast Upscaler** ([Watch Video](https://youtu.be/-W0EAA0-zos))
 - **ConDelta Workflows** ([Watch Video](https://youtu.be/D2pfch0Fmo4))
 - **Layer Styles Workflow** (in progress!)
@@ -116,6 +116,8 @@ Below is a categorized list of the workflows available in this repository:
   - `Wan2.2 All-in-One 360 animation - with subgraphs.json`
   - `Wan2.2 All-in-One 360 animation - without subgraphs - Local Prompts.json`
   - `Wan2.2 All-in-One 360 animation - without subgraphs.json`
+- **Character-Sheet-Workflows**
+  - `01-Character-Sheet-General-Purpose.json`
 - **Flux.1 Krea Dev**
   - `_flux1_krea_dev.json`
 - **LTX_Longer_Video_Generation**
@@ -124,9 +126,26 @@ Below is a categorized list of the workflows available in this repository:
   - `3-Combining LTX_Videos.json`
 - **Product Display**
   - `Contextual Inpainting Workflow.json`
+- **Qwen Image Edit Rapid AIO**
+  - `01-V7-text-to-image.json`
+  - `02-V7-one-image-edit.json`
+  - `03-V7-two-images-edit.json`
+  - `04-V7-three-images-edit.json`
+- **Qwen Image Edit Rapid AIO GGUF**
+  - `01-text-to-image.json`
+  - `02-one-image-edit.json`
+  - `03-two-images-edit.json`
+  - `04-three-images-edit.json`
+- **Qwen Image Inpainting**
+  - `qwen-inpainting-workflow.json`
 - **Qwen-Image-Edit-Four-Views**
   - `Qwen_Image_Edit-four-views-left-right-asymmetry.json`
   - `Qwen_Image_Edit-four-views.json`
+  - `V1-Qwen_Image_Edit-four-views-left-right-asymmetry.json`
+  - `V1-Qwen_Image_Edit-four-views-left-right-symmetry.json`
+  - `V2-Qwen_Image_Edit-Rapid-AIO-four-views-left-right-asymmetry.json`
+  - `V2-Qwen_Image_Edit-Rapid-AIO-four-views-left-right-symmetry.json`
+  - `V3-Qwen_Image_Edit-Rapid-AIO-GGUF-four-views-left-right-asymmetry.json`
 - **SRPO**
   - `comfyui_SRPO-workflow-quantization-with-image-to-image.json`
 - **Wan2.2 Animate resources**
