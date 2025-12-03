@@ -1,7 +1,7 @@
 {
   "id": "5bfb5805-0127-4895-983d-351adc2654fe",
   "revision": 0,
-  "last_node_id": 116,
+  "last_node_id": 118,
   "last_link_id": 291,
   "nodes": [
     {
@@ -65,7 +65,7 @@
         58
       ],
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -113,7 +113,7 @@
         26
       ],
       "flags": {},
-      "order": 8,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -157,7 +157,7 @@
         82
       ],
       "flags": {},
-      "order": 1,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -205,7 +205,7 @@
         660
       ],
       "flags": {},
-      "order": 22,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -243,7 +243,7 @@
         474
       ],
       "flags": {},
-      "order": 20,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -311,7 +311,7 @@
         46
       ],
       "flags": {},
-      "order": 21,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -361,7 +361,7 @@
         60
       ],
       "flags": {},
-      "order": 6,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -408,7 +408,7 @@
         370
       ],
       "flags": {},
-      "order": 5,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -457,7 +457,7 @@
         336
       ],
       "flags": {},
-      "order": 7,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -522,8 +522,7 @@
         "0, 0, 0",
         "center",
         2,
-        "cpu",
-        "<tr><td>Output: </td><td><b>1</b> x <b>1024</b> x <b>768 | 9.00MB</b></td></tr>"
+        "cpu"
       ]
     },
     {
@@ -561,7 +560,7 @@
         "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "ComfyUI_00008_.png",
+        "example.png",
         "image"
       ]
     },
@@ -610,7 +609,7 @@
         138
       ],
       "flags": {},
-      "order": 19,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -670,7 +669,7 @@
         106
       ],
       "flags": {},
-      "order": 17,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -722,7 +721,7 @@
         106
       ],
       "flags": {},
-      "order": 10,
+      "order": 12,
       "mode": 4,
       "inputs": [
         {
@@ -761,7 +760,7 @@
         82
       ],
       "flags": {},
-      "order": 12,
+      "order": 14,
       "mode": 4,
       "inputs": [
         {
@@ -799,7 +798,7 @@
         82
       ],
       "flags": {},
-      "order": 13,
+      "order": 15,
       "mode": 4,
       "inputs": [
         {
@@ -837,7 +836,7 @@
         82
       ],
       "flags": {},
-      "order": 11,
+      "order": 13,
       "mode": 4,
       "inputs": [
         {
@@ -875,7 +874,7 @@
         106
       ],
       "flags": {},
-      "order": 14,
+      "order": 16,
       "mode": 4,
       "inputs": [
         {
@@ -914,7 +913,7 @@
         82
       ],
       "flags": {},
-      "order": 16,
+      "order": 18,
       "mode": 4,
       "inputs": [
         {
@@ -952,7 +951,7 @@
         222
       ],
       "flags": {},
-      "order": 15,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1003,7 +1002,7 @@
         82
       ],
       "flags": {},
-      "order": 9,
+      "order": 11,
       "mode": 4,
       "inputs": [
         {
@@ -1041,7 +1040,7 @@
         260
       ],
       "flags": {},
-      "order": 18,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1057,6 +1056,52 @@
         "Node name for S&R": "PreviewImage"
       },
       "widgets_values": []
+    },
+    {
+      "id": 117,
+      "type": "MarkdownNote",
+      "pos": [
+        1120,
+        -340
+      ],
+      "size": [
+        420.65032958984375,
+        405.70733642578125
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "# 📌 ComfyUI Workflow Notes\n\n**Author:** Sharvin Suntoobacus  \n**YouTube Channel:** [CodeCraftersCorner](https://www.youtube.com/@CodeCraftersCorner)  \n**Patreon:** [Support on Patreon](https://www.patreon.com/codecrafterscorner)  \n\n---\n\n## ℹ️ About This Workflow\nThis workflow was created and shared by **Sharvin Suntoobacus** for the community.  \nThanks for using it and supporting the work!\n\n---\n\n## 🎥 Tutorial / Guide\nIf available, you can watch the video here:  \n[Watch on YouTube](https://youtu.be/Fx41mfbsqzI)\n\n*Note: The link may take up to two days to update.*\n\n---\n\n## 💡 Notes\n- Please credit when sharing.  \n- Supporting helps me create more workflows and guides.  \n\n---\n\n🙏 Thank you for your support!\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 118,
+      "type": "MarkdownNote",
+      "pos": [
+        3120,
+        380
+      ],
+      "size": [
+        460,
+        280
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "# ControlNet Model\n\n## Download from: [https://huggingface.co/alibaba-pai/Z-Image-Turbo-Fun-Controlnet-Union](https://huggingface.co/alibaba-pai/Z-Image-Turbo-Fun-Controlnet-Union)\n\n## Place file in ComfyUI / models / model_patches folder\n\n## Press \"r\" in ComfyUI to reload node definitions and select from dropdown in \"ModelPatchLoader\" node"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1308,10 +1353,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.37974983358325665,
+      "scale": 0.34522712143932477,
       "offset": [
-        -877.2932268232013,
-        744.6844324406659
+        -319.4143488092462,
+        773.3102103845289
       ]
     },
     "frontendVersion": "1.33.10",
