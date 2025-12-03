@@ -1,7 +1,7 @@
 {
   "id": "5bfb5805-0127-4895-983d-351adc2654fe",
   "revision": 0,
-  "last_node_id": 118,
+  "last_node_id": 119,
   "last_link_id": 291,
   "nodes": [
     {
@@ -113,7 +113,7 @@
         26
       ],
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -205,7 +205,7 @@
         660
       ],
       "flags": {},
-      "order": 24,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -243,7 +243,7 @@
         474
       ],
       "flags": {},
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -311,7 +311,7 @@
         46
       ],
       "flags": {},
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -361,7 +361,7 @@
         60
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -408,7 +408,7 @@
         370
       ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -457,7 +457,7 @@
         336
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -537,7 +537,7 @@
         314
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -576,7 +576,7 @@
         60
       ],
       "flags": {},
-      "order": 3,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -609,7 +609,7 @@
         138
       ],
       "flags": {},
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -669,7 +669,7 @@
         106
       ],
       "flags": {},
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -721,7 +721,7 @@
         106
       ],
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 4,
       "inputs": [
         {
@@ -760,7 +760,7 @@
         82
       ],
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 4,
       "inputs": [
         {
@@ -798,7 +798,7 @@
         82
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 4,
       "inputs": [
         {
@@ -836,7 +836,7 @@
         82
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 4,
       "inputs": [
         {
@@ -874,7 +874,7 @@
         106
       ],
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 4,
       "inputs": [
         {
@@ -913,7 +913,7 @@
         82
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 4,
       "inputs": [
         {
@@ -951,7 +951,7 @@
         222
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1002,7 +1002,7 @@
         82
       ],
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 4,
       "inputs": [
         {
@@ -1040,7 +1040,7 @@
         260
       ],
       "flags": {},
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1061,15 +1061,15 @@
       "id": 117,
       "type": "MarkdownNote",
       "pos": [
-        1120,
-        -340
+        1100,
+        140
       ],
       "size": [
         420.65032958984375,
         405.70733642578125
       ],
       "flags": {},
-      "order": 5,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1092,13 +1092,39 @@
         280
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
       "properties": {},
       "widgets_values": [
         "# ControlNet Model\n\n## Download from: [https://huggingface.co/alibaba-pai/Z-Image-Turbo-Fun-Controlnet-Union](https://huggingface.co/alibaba-pai/Z-Image-Turbo-Fun-Controlnet-Union)\n\n## Place file in ComfyUI / models / model_patches folder\n\n## Press \"r\" in ComfyUI to reload node definitions and select from dropdown in \"ModelPatchLoader\" node"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 119,
+      "type": "MarkdownNote",
+      "pos": [
+        1040,
+        -340
+      ],
+      "size": [
+        490,
+        400
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Model link",
+      "properties": {},
+      "widgets_values": [
+        "## Report issue\n\nIf you found any issues when running this workflow, [report template issue here](https://github.com/Comfy-Org/workflow_templates/issues)\n\n\n## Model links\n\n**text_encoders**\n\n- [qwen_3_4b.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors)\n\n**diffusion_models**\n\n- [z_image_turbo_bf16.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors)\n\n**vae**\n\n- [ae.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors)\n\n\nModel Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 text_encoders/\n│   │      └── qwen_3_4b.safetensors\n│   ├── 📂 diffusion_models/\n│   │      └── z_image_turbo_bf16.safetensors\n│   └── 📂 vae/\n│          └── ae.safetensors\n```\n\n"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1353,10 +1379,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.34522712143932477,
+      "scale": 0.8140274938684336,
       "offset": [
-        -319.4143488092462,
-        773.3102103845289
+        -582.7551672553263,
+        687.9942179727061
       ]
     },
     "frontendVersion": "1.33.10",
