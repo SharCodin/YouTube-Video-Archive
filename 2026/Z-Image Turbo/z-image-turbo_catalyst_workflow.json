@@ -54,7 +54,7 @@
         120
       ],
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -103,7 +103,7 @@
         60
       ],
       "flags": {},
-      "order": 4,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -150,7 +150,7 @@
         40
       ],
       "flags": {},
-      "order": 9,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -244,7 +244,7 @@
         100
       ],
       "flags": {},
-      "order": 0,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -292,7 +292,7 @@
         380
       ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -567,7 +567,7 @@
         140
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -618,7 +618,7 @@
       ],
       "size": [
         140,
-        124.00000000000011
+        140
       ],
       "flags": {},
       "order": 13,
@@ -670,7 +670,7 @@
         120
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -711,7 +711,7 @@
         120
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -748,7 +748,7 @@
         200
       ],
       "size": [
-        330,
+        340,
         680
       ],
       "flags": {},
@@ -872,7 +872,7 @@
         200
       ],
       "flags": {},
-      "order": 2,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -902,8 +902,8 @@
         140
       ],
       "size": [
-        420,
-        820
+        440,
+        1060
       ],
       "flags": {},
       "order": 5,
@@ -912,7 +912,7 @@
       "outputs": [],
       "properties": {},
       "widgets_values": [
-        ""
+        "# 📌 ComfyUI Workflow Notes\n\n**Author:** Sharvin Suntoobacus\n\n**YouTube Channel:** [CodeCraftersCorner](https://www.youtube.com/@codecrafterscorner)\n\n**Patreon:** [Support on Patreon](https://www.patreon.com/codecrafterscorner)\n\n---\n\n### ℹ️ About This Workflow\n\nThis workflow provides a streamlined setup for the **CyberRealistic Z-Image Turbo Catalyst** model. It features an automated **Resolution Master** system that ensures compatibility across various aspect ratios and banner formats. Users can achieve improved skin textures, refined color grading, and superior LoRA compatibility with high-speed generation (9 steps).\n\n### 🎥 Tutorial / Guide\n\nIf available, you can watch the video here:\n\n**[Watch on YouTube](https://youtu.be/nDm_rDyL3pM)**\n\n### 📥 Model Links (for Local Users)\n\n- **diffusion_models**\n    - [CyberRealistic Z-Image Turbo Catalyst](https://civitai.com/models/2513307/cyberrealistic-z-image-turbo-catalyst)\n        \n- **text_encoders**\n    - `qwen3_4b.safetensors` (for 16GB+ VRAM)\n    - `qwen34bfp8_scaled.safetensors` (for 8–12GB VRAM)\n        \n- **vae**\n    - `ae.safetensors` (required for all setups)\n        \n\n### 📂 Model Storage Location\n\nPlace the downloaded files into the following directories within your ComfyUI installation:\n\n📂 **ComfyUI/** \n\n\t├── 📂 **models/** \n\n\t\t├── 📂 **diffusion_models/**\n\n\t\t\t └── `CyberRealistic_Z_Image_Turbo_Catalyst.safetensors`\n\n\t├── 📂 **text_encoders/** \n\n\t\t└── `qwen3_4b.safetensors`\n\n\t└── 📂 **vae/** \n\n\t\t└── `ae.safetensors`\n\n\n---\n\n### 💡 Notes\n\n- **Custom Nodes:** You must install the **Resolution Master** custom node via the ComfyUI Manager for the resizing logic to function.\n    \n- **Experimental Branch:** This Catalyst version is an experimental track; if you encounter stability issues with specific LoRAs, consider reverting to the stable V0.7 or the mainline Z-Image Turbo.\n    \n- **Subgraphs:** To integrate this into your existing workflows, it is recommended to group the nodes into a subgraph for easier management.\n    \n\n**Credit:** Please credit Sharvin Suntoobacus and share YouTube Channel Code Crafters Corner when sharing this workflow.\n\n**Support:** Your support on Patreon helps me continue creating these guides!\n\n**🙏 Thank you for your support!**\n\n---\n"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1086,7 +1086,7 @@
       "title": "Core",
       "bounding": [
         -1980,
-        916.4,
+        920,
         1480,
         983.6
       ],
@@ -1124,10 +1124,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5296769346356208,
+      "scale": 0.48152448603238324,
       "offset": [
-        2864.827902991072,
-        230.40371380480295
+        3073.102698689473,
+        177.58275143883188
       ]
     },
     "frontendVersion": "1.42.11",
