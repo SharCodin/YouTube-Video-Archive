@@ -1,7 +1,7 @@
 {
   "id": "9ae6082b-c7f4-433c-9971-7a8f65a3ea65",
   "revision": 0,
-  "last_node_id": 89,
+  "last_node_id": 90,
   "last_link_id": 102,
   "nodes": [
     {
@@ -16,7 +16,7 @@
         660
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -54,7 +54,7 @@
         120
       ],
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -103,7 +103,7 @@
         60
       ],
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -150,7 +150,7 @@
         60
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -200,7 +200,7 @@
         100
       ],
       "flags": {},
-      "order": 0,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -248,7 +248,7 @@
         60
       ],
       "flags": {},
-      "order": 4,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -331,7 +331,7 @@
         460
       ],
       "flags": {},
-      "order": 6,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -467,6 +467,29 @@
         null,
         null
       ]
+    },
+    {
+      "id": 90,
+      "type": "MarkdownNote",
+      "pos": [
+        -1500,
+        120
+      ],
+      "size": [
+        640,
+        1060
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "# 📌 ComfyUI Workflow Notes\n\n**Author:** Sharvin Suntoobacus  \n**YouTube Channel:** [CodeCraftersCorner](https://www.youtube.com/@CodeCraftersCorner)  \n**Patreon:** [Support on Patreon](https://www.patreon.com/codecrafterscorner)\n\n-----\n## ℹ️ About This Workflow\n\nThis workflow focuses on the **Z-Image Turbo Power Nodes**, a specialized collection of helper nodes designed to maximize the performance of the Z-Image model family. Users can implement visual style selection through a dedicated Style Prompt Encoder, utilize an optimized Empty Z-Image Latent node for precise aspect ratio control, and employ a custom Z-Sampler Turbo for high-efficiency generation. This setup simplifies the ComfyUI experience by providing curated style presets and automated resolution handling tailored for the Z-Image architecture.\n\n-----\n## 🎥 Tutorial / Guide\n\nYou can watch the video here:  \n[Watch on YouTube](https://youtu.be/d2e8bpujXd0)  \n\n-----\n## 📥 Model Links (for Local Users)\n\nBelow are the specific models used in this workflow. Download them and place them in the corresponding directories listed in the storage section.\n\n**diffusion_models**\n  - [z_image_turbo_bf16.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors)\n\n**text_encoders**\n  - [qwen_3_4b.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors)\n\n**vae**\n  - [ae.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors)\n\n**loras** (Optional)\n  - [pixel_art_style_z_image_turbo.safetensors](https://huggingface.co/tarn59/pixel_art_style_lora_z_image_turbo/resolve/main/pixel_art_style_z_image_turbo.safetensors)\n\n-----\n## 📂 Model Storage Location\n\nPlace the downloaded files into the following directories within your ComfyUI installation:\n\n```text\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 diffusion_models/\n│   │   └── z_image_turbo_bf16.safetensors\n│   ├── 📂 text_encoders/\n│   │   └── qwen_3_4b.safetensors\n│   ├── 📂 vae/\n│   │   └── ae.safetensors\n│   └── 📂 loras/\n│       └── pixel_art_style_z_image_turbo.safetensors\n```\n\n\n-----\n## 💡 Notes\n\n  - **Installation:** Search for \"Z-Image Power Nodes\" in the ComfyUI Manager to install the required custom nodes.\n  - **Resolution:** The Empty Z-Image Latent node uses \"Small\" for ~720p, \"Medium\" for ~1080p, and \"Large\" for 2K outputs. Toggle \"landscape\" to switch between widescreen and portrait orientations.\n  - **Sampling Steps:** For the Z-Sampler Turbo, 3 steps are ideal for drafting, while 8-10 steps provide the highest quality results without post-processing.\n  - **Credit:** Please credit **Sharvin Suntoobacus** and share [YouTube Channel **Code Crafters Corner**](https://www.youtube.com/@codecrafterscorner) when sharing this workflow.\n  - **Support:** Your support on [Patreon](https://www.patreon.com/c/codecrafterscorner) helps me continue creating these guides!\n\n-----\n\n🙏 Thank you for your support!\n\n\nhttp://googleusercontent.com/youtube_content/1"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -547,10 +570,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8142056074766517,
+      "scale": 0.5561133853402447,
       "offset": [
-        958.3609268380219,
-        158.02120994194883
+        1779.081990235179,
+        265.02351140123056
       ]
     },
     "frontendVersion": "1.42.11",
