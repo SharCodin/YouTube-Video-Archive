@@ -1,0 +1,564 @@
+{
+  "id": "9ae6082b-c7f4-433c-9971-7a8f65a3ea65",
+  "revision": 0,
+  "last_node_id": 89,
+  "last_link_id": 102,
+  "nodes": [
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": [
+        560,
+        200
+      ],
+      "size": [
+        780,
+        660
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 80
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "SaveImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "z-image-turbo"
+      ]
+    },
+    {
+      "id": 62,
+      "type": "CLIPLoader",
+      "pos": [
+        -800,
+        360
+      ],
+      "size": [
+        280,
+        120
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            86
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.73",
+        "Node name for S&R": "CLIPLoader",
+        "models": [
+          {
+            "name": "qwen_3_4b.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors",
+            "directory": "text_encoders"
+          }
+        ],
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "qwen_3_4b.safetensors",
+        "lumina2",
+        "default"
+      ]
+    },
+    {
+      "id": 63,
+      "type": "VAELoader",
+      "pos": [
+        -780,
+        540
+      ],
+      "size": [
+        280,
+        60
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            74
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.73",
+        "Node name for S&R": "VAELoader",
+        "models": [
+          {
+            "name": "ae.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors",
+            "directory": "vae"
+          }
+        ],
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "ae.safetensors"
+      ]
+    },
+    {
+      "id": 65,
+      "type": "VAEDecode",
+      "pos": [
+        320,
+        200
+      ],
+      "size": [
+        220,
+        60
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 85
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 74
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            80
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "VAEDecode",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 66,
+      "type": "UNETLoader",
+      "pos": [
+        -780,
+        200
+      ],
+      "size": [
+        280,
+        100
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            72
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.73",
+        "Node name for S&R": "UNETLoader",
+        "models": [
+          {
+            "name": "z_image_turbo_bf16.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors",
+            "directory": "diffusion_models"
+          }
+        ],
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "z_image_turbo_bf16.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 69,
+      "type": "ModelSamplingAuraFlow",
+      "pos": [
+        -20,
+        200
+      ],
+      "size": [
+        320,
+        60
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 72
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            82
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "ModelSamplingAuraFlow",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        3
+      ]
+    },
+    {
+      "id": 74,
+      "type": "EmptyZImageLatentImage //ZImagePowerNodes",
+      "pos": [
+        -800,
+        660
+      ],
+      "size": [
+        320,
+        140
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            93
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "z-image-power-nodes",
+        "ver": "1.0.0",
+        "Node name for S&R": "EmptyZImageLatentImage //ZImagePowerNodes"
+      },
+      "widgets_values": [
+        false,
+        "3:2  (photo)",
+        "small",
+        1
+      ]
+    },
+    {
+      "id": 75,
+      "type": "ZSamplerTurbo //ZImagePowerNodes",
+      "pos": [
+        -20,
+        320
+      ],
+      "size": [
+        300,
+        460
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 82
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 87
+        },
+        {
+          "name": "latent_input",
+          "type": "LATENT",
+          "link": 93
+        }
+      ],
+      "outputs": [
+        {
+          "name": "latent_output",
+          "type": "LATENT",
+          "links": [
+            85
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "z-image-power-nodes",
+        "ver": "1.0.0",
+        "Node name for S&R": "ZSamplerTurbo //ZImagePowerNodes"
+      },
+      "widgets_values": [
+        1234,
+        "fixed",
+        8,
+        1,
+        null,
+        "off",
+        false
+      ]
+    },
+    {
+      "id": 78,
+      "type": "StylePromptEncoder2 //ZImagePowerNodes",
+      "pos": [
+        -480,
+        200
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 86
+        },
+        {
+          "name": "customization",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            87
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            88
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "z-image-power-nodes",
+        "ver": "1.0.0",
+        "Node name for S&R": "StylePromptEncoder2 //ZImagePowerNodes"
+      },
+      "widgets_values": [
+        "\"Ink & Shadow\"",
+        null,
+        null,
+        "female half portrait with bionic cheeks with exposed metal plating"
+      ]
+    },
+    {
+      "id": 79,
+      "type": "PreviewAny",
+      "pos": [
+        -440,
+        460
+      ],
+      "size": [
+        340,
+        340
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 88
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.2",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "links": [
+    [
+      72,
+      66,
+      0,
+      69,
+      0,
+      "MODEL"
+    ],
+    [
+      74,
+      63,
+      0,
+      65,
+      1,
+      "VAE"
+    ],
+    [
+      80,
+      65,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      82,
+      69,
+      0,
+      75,
+      0,
+      "MODEL"
+    ],
+    [
+      85,
+      75,
+      0,
+      65,
+      0,
+      "LATENT"
+    ],
+    [
+      86,
+      62,
+      0,
+      78,
+      0,
+      "CLIP"
+    ],
+    [
+      87,
+      78,
+      0,
+      75,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      88,
+      78,
+      1,
+      79,
+      0,
+      "STRING"
+    ],
+    [
+      93,
+      74,
+      0,
+      75,
+      2,
+      "LATENT"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8142056074766517,
+      "offset": [
+        958.3609268380219,
+        158.02120994194883
+      ]
+    },
+    "frontendVersion": "1.42.11",
+    "workflowRendererVersion": "LG",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
