@@ -1,0 +1,955 @@
+{
+  "id": "9ae6082b-c7f4-433c-9971-7a8f65a3ea65",
+  "revision": 0,
+  "last_node_id": 128,
+  "last_link_id": 167,
+  "nodes": [
+    {
+      "id": 73,
+      "type": "SaveImage",
+      "pos": [
+        -200,
+        -240
+      ],
+      "size": [
+        520,
+        580
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 141
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Ernie-Image-Turbo"
+      ]
+    },
+    {
+      "id": 89,
+      "type": "MarkdownNote",
+      "pos": [
+        -2300,
+        -240
+      ],
+      "size": [
+        520,
+        920
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Guide: [Subgraph](https://docs.comfy.org/interface/features/subgraph)\n\n## Model Links (for Local Users)\n\n**diffusion_models**\n\n- [ernie-image.safetensors](https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/diffusion_models/ernie-image.safetensors)\n\n**text_encoders**\n\n- [ministral-3-3b.safetensors](https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/text_encoders/ministral-3-3b.safetensors)\n- [ernie-image-prompt-enhancer.safetensors](https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/text_encoders/ernie-image-prompt-enhancer.safetensors)\n\n**vae**\n\n- [flux2-vae.safetensors](https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/vae/flux2-vae.safetensors)\n\n\n## Model Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 diffusion_models/\n│   │   └── ernie-image.safetensors\n│   ├── 📂 text_encoders/\n│   │   ├── ministral-3-3b.safetensors\n│   │   └── ernie-image-prompt-enhancer.safetensors\n│   └── 📂 vae/\n│       └── flux2-vae.safetensors\n```\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud updates follow stable releases, so some nightly-supported models may not be available yet.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/comfyanonymous/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 104,
+      "type": "EmptyFlux2LatentImage",
+      "pos": [
+        -1680,
+        580
+      ],
+      "size": [
+        280,
+        180
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            139
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "Node name for S&R": "EmptyFlux2LatentImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        1024,
+        1536,
+        1
+      ]
+    },
+    {
+      "id": 105,
+      "type": "UNETLoader",
+      "pos": [
+        -1680,
+        -140
+      ],
+      "size": [
+        280,
+        120
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            137
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.73",
+        "Node name for S&R": "UNETLoader",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "models": [
+          {
+            "name": "ernie-image-turbo.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/diffusion_models/ernie-image-turbo.safetensors",
+            "directory": "diffusion_models"
+          }
+        ],
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "ernie-image-turbo.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 106,
+      "type": "VAEDecode",
+      "pos": [
+        -500,
+        -180
+      ],
+      "size": [
+        240,
+        100
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 135
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 136
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            141,
+            156
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "VAEDecode",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 107,
+      "type": "KSampler",
+      "pos": [
+        -860,
+        -180
+      ],
+      "size": [
+        320,
+        480
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 137
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 138
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 143
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 139
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            135
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "KSampler",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        1236,
+        "fixed",
+        8,
+        1,
+        "euler",
+        "simple",
+        1
+      ]
+    },
+    {
+      "id": 108,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -1340,
+        -140
+      ],
+      "size": [
+        420,
+        380
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 140
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 166
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            138,
+            142
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.73",
+        "Node name for S&R": "CLIPTextEncode",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 109,
+      "type": "CLIPLoader",
+      "pos": [
+        -1680,
+        60
+      ],
+      "size": [
+        280,
+        160
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            140
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.73",
+        "Node name for S&R": "CLIPLoader",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "models": [
+          {
+            "name": "ministral-3-3b.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/text_encoders/ministral-3-3b.safetensors",
+            "directory": "text_encoders"
+          }
+        ],
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "ministral-3-3b.safetensors",
+        "flux2",
+        "default"
+      ]
+    },
+    {
+      "id": 110,
+      "type": "VAELoader",
+      "pos": [
+        -1680,
+        320
+      ],
+      "size": [
+        280,
+        120
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            136
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.73",
+        "Node name for S&R": "VAELoader",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "models": [
+          {
+            "name": "flux2-vae.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/vae/flux2-vae.safetensors",
+            "directory": "vae"
+          }
+        ],
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "flux2-vae.safetensors"
+      ]
+    },
+    {
+      "id": 111,
+      "type": "ConditioningZeroOut",
+      "pos": [
+        -1180,
+        300
+      ],
+      "size": [
+        240,
+        80
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 142
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            143
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "Node name for S&R": "ConditioningZeroOut",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 122,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -1720,
+        -520
+      ],
+      "size": [
+        540,
+        220
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            164
+          ]
+        }
+      ],
+      "title": "Style",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "Node name for S&R": "PrimitiveStringMultiline",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "YOUR CONTEXT:\nYou are a Japanese manga artist.\nYour illustration features colored manga-style that includes manga screentone patterns with high-contrast colored drawing, in a violent atmosphere. Always imagine the scene with colors.\n"
+      ]
+    },
+    {
+      "id": 123,
+      "type": "ConvertGrayChannelNode",
+      "pos": [
+        -180,
+        420
+      ],
+      "size": [
+        180,
+        100
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 156
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grayscale",
+          "type": "IMAGE",
+          "links": [
+            157
+          ]
+        },
+        {
+          "name": "blue channel",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "green channel",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "red channel",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-MingNodes",
+        "ver": "afaee2c3edb40bc0d585f0597ba234dcd1041657",
+        "Node name for S&R": "ConvertGrayChannelNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 124,
+      "type": "SaveImage",
+      "pos": [
+        340,
+        -240
+      ],
+      "size": [
+        520,
+        580
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 157
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Ernie-Image-Turbo"
+      ]
+    },
+    {
+      "id": 126,
+      "type": "StringConcatenate",
+      "pos": [
+        -600,
+        -520
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 164
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 167
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            166
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 128,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -1160,
+        -520
+      ],
+      "size": [
+        540,
+        220
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            167
+          ]
+        }
+      ],
+      "title": "The Story",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "Node name for S&R": "PrimitiveStringMultiline",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "YOUR TASK:\nA 5-panel manga page, staggered layout. Style: Classic 90s aesthetic, delicate linework, heavy use of dot-pattern screentones for mood. Character: A tall man in a tattered trench coat with messy blonde hair.\n\nPanel 1 (Top Left): Close-up of his hand holding a cracked pocket watch. The time reads 11:59.\n\nPanel 2 (Top Right): He looks up at a clock tower in a snowy town square. Soft, melancholic expression.\n\nPanel 3 (Center): Large panel. He drops to his knees as the clock hits midnight. Snowflakes resting on his hair and shoulders. Text: \"Forgive me.\"\n\nPanel 4 (Bottom Left): Close-up of his face, a single tear frozen on his cheek. Teeth Grit.\n\nPanel 5 (Bottom Right): Wide shot from behind. He is a small silhouette in a vast, white field of snow. Text: \"The promise is broken.\""
+      ]
+    }
+  ],
+  "links": [
+    [
+      135,
+      107,
+      0,
+      106,
+      0,
+      "LATENT"
+    ],
+    [
+      136,
+      110,
+      0,
+      106,
+      1,
+      "VAE"
+    ],
+    [
+      137,
+      105,
+      0,
+      107,
+      0,
+      "MODEL"
+    ],
+    [
+      138,
+      108,
+      0,
+      107,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      139,
+      104,
+      0,
+      107,
+      3,
+      "LATENT"
+    ],
+    [
+      140,
+      109,
+      0,
+      108,
+      0,
+      "CLIP"
+    ],
+    [
+      141,
+      106,
+      0,
+      73,
+      0,
+      "IMAGE"
+    ],
+    [
+      142,
+      108,
+      0,
+      111,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      143,
+      111,
+      0,
+      107,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      156,
+      106,
+      0,
+      123,
+      0,
+      "IMAGE"
+    ],
+    [
+      157,
+      123,
+      0,
+      124,
+      0,
+      "IMAGE"
+    ],
+    [
+      164,
+      122,
+      0,
+      126,
+      0,
+      "STRING"
+    ],
+    [
+      166,
+      126,
+      0,
+      108,
+      1,
+      "STRING"
+    ],
+    [
+      167,
+      128,
+      0,
+      126,
+      1,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 6,
+      "title": "Text to Image",
+      "bounding": [
+        -1720,
+        -280,
+        1480,
+        1077.1999999999998
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Image Size",
+      "bounding": [
+        -1700,
+        500,
+        320,
+        283.6
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "Prompt",
+      "bounding": [
+        -1360,
+        -220,
+        460,
+        623.6
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "Model",
+      "bounding": [
+        -1700,
+        -220,
+        320,
+        683.6
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "frontendVersion": "1.42.12",
+    "workflowRendererVersion": "LG",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "ue_links": [],
+    "ds": {
+      "scale": 0.4781734312630906,
+      "offset": [
+        3166.506777146157,
+        956.052021084231
+      ]
+    }
+  },
+  "version": 0.4
+}
