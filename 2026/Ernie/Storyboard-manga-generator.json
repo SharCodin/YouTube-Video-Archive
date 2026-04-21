@@ -1,7 +1,7 @@
 {
   "id": "9ae6082b-c7f4-433c-9971-7a8f65a3ea65",
   "revision": 0,
-  "last_node_id": 128,
+  "last_node_id": 129,
   "last_link_id": 167,
   "nodes": [
     {
@@ -50,35 +50,6 @@
       ]
     },
     {
-      "id": 89,
-      "type": "MarkdownNote",
-      "pos": [
-        -2300,
-        -240
-      ],
-      "size": [
-        520,
-        920
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.7",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "Guide: [Subgraph](https://docs.comfy.org/interface/features/subgraph)\n\n## Model Links (for Local Users)\n\n**diffusion_models**\n\n- [ernie-image.safetensors](https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/diffusion_models/ernie-image.safetensors)\n\n**text_encoders**\n\n- [ministral-3-3b.safetensors](https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/text_encoders/ministral-3-3b.safetensors)\n- [ernie-image-prompt-enhancer.safetensors](https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/text_encoders/ernie-image-prompt-enhancer.safetensors)\n\n**vae**\n\n- [flux2-vae.safetensors](https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/vae/flux2-vae.safetensors)\n\n\n## Model Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 diffusion_models/\n│   │   └── ernie-image.safetensors\n│   ├── 📂 text_encoders/\n│   │   ├── ministral-3-3b.safetensors\n│   │   └── ernie-image-prompt-enhancer.safetensors\n│   └── 📂 vae/\n│       └── flux2-vae.safetensors\n```\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud updates follow stable releases, so some nightly-supported models may not be available yet.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/comfyanonymous/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
-      ],
-      "color": "#222",
-      "bgcolor": "#000"
-    },
-    {
       "id": 104,
       "type": "EmptyFlux2LatentImage",
       "pos": [
@@ -90,7 +61,7 @@
         180
       ],
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -137,7 +108,7 @@
         120
       ],
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -381,7 +352,7 @@
         160
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -435,7 +406,7 @@
         120
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -536,7 +507,7 @@
         220
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -731,7 +702,7 @@
         220
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -764,6 +735,29 @@
       "widgets_values": [
         "YOUR TASK:\nA 5-panel manga page, staggered layout. Style: Classic 90s aesthetic, delicate linework, heavy use of dot-pattern screentones for mood. Character: A tall man in a tattered trench coat with messy blonde hair.\n\nPanel 1 (Top Left): Close-up of his hand holding a cracked pocket watch. The time reads 11:59.\n\nPanel 2 (Top Right): He looks up at a clock tower in a snowy town square. Soft, melancholic expression.\n\nPanel 3 (Center): Large panel. He drops to his knees as the clock hits midnight. Snowflakes resting on his hair and shoulders. Text: \"Forgive me.\"\n\nPanel 4 (Bottom Left): Close-up of his face, a single tear frozen on his cheek. Teeth Grit.\n\nPanel 5 (Bottom Right): Wide shot from behind. He is a small silhouette in a vast, white field of snow. Text: \"The promise is broken.\""
       ]
+    },
+    {
+      "id": 129,
+      "type": "MarkdownNote",
+      "pos": [
+        -2240,
+        -260
+      ],
+      "size": [
+        500,
+        1060
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "# 📌 ComfyUI Workflow Notes\n**Author:** Sharvin Suntoobacus  \n**YouTube Channel:** [CodeCraftersCorner](https://bit.ly/4b0o8dQ)  \n**Patreon:** [Support on Patreon](https://www.patreon.com/codecrafterscorner)\n\n---\n\n### ℹ️ About This Workflow\nThis workflow is designed to leverage the **ERNIE-Image-Turbo** model for high-speed, consistent multi-panel manga generation and storyboarding. It allows users to maintain character and style consistency across sequential panels by using precise camera and action prompting. The workflow is optimised for 8-step inference, making it suitable for rapid narrative prototyping and high-fidelity text-to-image creation.\n\n### 🎥 Tutorial / Guide\n[Watch on YouTube](https://youtu.be/gzvh-zYx7Oo)  \n\n\n### 📥 Model Links (for Local Users)\nDownload the following models from the [Project Page](https://huggingface.co/Comfy-Org/ERNIE-Image):\n\n**diffusion_models**\n* [ernie-image-turbo.safetensors](https://huggingface.co/Comfy-Org/ERNIE-Image/blob/main/diffusion_models/ernie-image-turbo.safetensors)\n\n**text_encoders**\n* [ministral-3-3b.safetensors](https://huggingface.co/Comfy-Org/ERNIE-Image/blob/main/text_encoders/ministral-3-3b.safetensors)\n\n**vae**\n* [flux2-vae.safetensors](https://huggingface.co/Comfy-Org/ERNIE-Image/blob/main/vae/flux2-vae.safetensors)\n\n### 📂 Model Storage Location\nPlace the downloaded files into the following directories within your ComfyUI installation:\n\n📂 **ComfyUI/**\n\n├── 📂 **models/**\n\n│   ├── 📂 **diffusion_models/**\n\n│   │   └── ernie-image-turbo.safetensors\n\n\n│   ├── 📂 **text_encoders/**\n\n│   │   └── ministral-3-3b.safetensors\n\n\n│   └── 📂 **vae/**\n\n│       └── flux2-vae.safetensors\n\n\n### 💡 Notes\n* **Resolution:** For optimal character proportions in multi-panel layouts, a \"tall\" orientation is recommended over a square 1024x1024 aspect ratio to prevent character compression/deformation.\n* **Consistency:** When regenerating specific panels, adjust the seed by +/- 1 to maintain character likeness while fixing minor generation errors.\n* **Grayscale Output:** If a traditional manga aesthetic is required, ensure the **ComfyUI-Ming-nodes** (or any saturation node) is installed to convert the output to grayscale.\n* **Hardware:** This workflow has been verified to run on 12GB VRAM.\n* **Workflow Download:** Get the JSON file here: [GitHub Archive](https://github.com/SharCodin/YouTube-Video-Archive/tree/main-branch/2026/Ernie)\n\n**Credit:** Please credit Sharvin Suntoobacus and share YouTube Channel Code Crafters Corner when sharing this workflow.  \n**Support:** Your support on Patreon helps me continue creating these guides!  \n\n🙏 **Thank you for your support!**"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -944,10 +938,10 @@
     "VHS_KeepIntermediate": true,
     "ue_links": [],
     "ds": {
-      "scale": 0.4781734312630906,
+      "scale": 0.3265988875507761,
       "offset": [
-        3166.506777146157,
-        956.052021084231
+        3781.376162380479,
+        1486.292758967275
       ]
     }
   },
