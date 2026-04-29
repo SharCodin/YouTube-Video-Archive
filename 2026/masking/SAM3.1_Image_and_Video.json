@@ -1,0 +1,1170 @@
+{
+  "id": "1d367ebe-cf07-4c87-b73a-db40277e6d53",
+  "revision": 0,
+  "last_node_id": 144,
+  "last_link_id": 316,
+  "nodes": [
+    {
+      "id": 79,
+      "type": "LoadImage",
+      "pos": [
+        -2800.00011562671,
+        -3040.000013181014
+      ],
+      "size": [
+        300,
+        400
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            282,
+            289,
+            291
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3",
+        "Node name for S&R": "LoadImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "2026-04-29 11-28-00.png",
+        "image"
+      ]
+    },
+    {
+      "id": 111,
+      "type": "JoinImageWithAlpha",
+      "pos": [
+        -1980.0000613899952,
+        -3179.999965393159
+      ],
+      "size": [
+        240,
+        100
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 282
+        },
+        {
+          "name": "alpha",
+          "type": "MASK",
+          "link": 288
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            295
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3",
+        "Node name for S&R": "JoinImageWithAlpha",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 114,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -2879.999999216163,
+        -2440.0001066071027
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 286
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            285
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3",
+        "Node name for S&R": "CLIPTextEncode",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "microscope, chairs:2, monitor"
+      ]
+    },
+    {
+      "id": 115,
+      "type": "SAM3_Detect",
+      "pos": [
+        -2380.000103059671,
+        -2999.999993420986
+      ],
+      "size": [
+        380,
+        420
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 284
+        },
+        {
+          "label": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 289
+        },
+        {
+          "label": "conditioning",
+          "name": "conditioning",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": 285
+        },
+        {
+          "label": "bboxes",
+          "name": "bboxes",
+          "shape": 7,
+          "type": "BOUNDING_BOX",
+          "link": null
+        },
+        {
+          "label": "positive_coords",
+          "name": "positive_coords",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "label": "negative_coords",
+          "name": "negative_coords",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "masks",
+          "type": "MASK",
+          "links": [
+            288,
+            296
+          ]
+        },
+        {
+          "name": "bboxes",
+          "type": "BOUNDING_BOX",
+          "links": [
+            290
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3",
+        "Node name for S&R": "SAM3_Detect",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        0.5,
+        2,
+        false
+      ]
+    },
+    {
+      "id": 116,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -2800.00011562671,
+        -3359.999976347983
+      ],
+      "size": [
+        340,
+        160
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            284,
+            303
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            286,
+            315
+          ]
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3",
+        "Node name for S&R": "CheckpointLoaderSimple",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "models": [
+          {
+            "name": "sam3.1_multiplex_fp16.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/sam3.1/resolve/main/checkpoints/sam3.1_multiplex_fp16.safetensors",
+            "directory": "checkpoints"
+          }
+        ]
+      },
+      "widgets_values": [
+        "sam3.1_multiplex_fp16.safetensors"
+      ]
+    },
+    {
+      "id": 117,
+      "type": "DrawBBoxes",
+      "pos": [
+        -2299.999907609013,
+        -3179.999965393159
+      ],
+      "size": [
+        240,
+        100
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "bboxes",
+          "type": "BOUNDING_BOX",
+          "link": 290
+        },
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 291
+        }
+      ],
+      "outputs": [
+        {
+          "name": "out_image",
+          "type": "IMAGE",
+          "links": [
+            293
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "DrawBBoxes"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 118,
+      "type": "SaveImage",
+      "pos": [
+        -1900.0001778005421,
+        -2980.0000225236226
+      ],
+      "size": [
+        340,
+        400
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 293
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 119,
+      "type": "SaveImage",
+      "pos": [
+        -1020.0002108717372,
+        -2980.0000225236226
+      ],
+      "size": [
+        320,
+        400
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 295
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 121,
+      "type": "MaskToImage",
+      "pos": [
+        -1639.9999324124096,
+        -3179.999965393159
+      ],
+      "size": [
+        240,
+        80
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 296
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            297
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "MaskToImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 122,
+      "type": "SaveImage",
+      "pos": [
+        -1480.0001652335031,
+        -2980.0000225236226
+      ],
+      "size": [
+        360,
+        400
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 297
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 124,
+      "type": "SAM3_VideoTrack",
+      "pos": [
+        199.99957317344797,
+        -3359.999976347983
+      ],
+      "size": [
+        280,
+        240
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 299
+        },
+        {
+          "label": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 303
+        },
+        {
+          "label": "initial_mask",
+          "name": "initial_mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "label": "conditioning",
+          "name": "conditioning",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": 314
+        }
+      ],
+      "outputs": [
+        {
+          "name": "track_data",
+          "type": "SAM3_TRACK_DATA",
+          "links": [
+            300,
+            307
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "SAM3_VideoTrack"
+      },
+      "widgets_values": [
+        0.5,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 128,
+      "type": "SAM3_TrackToMask",
+      "pos": [
+        540.0000140122374,
+        -3219.999985153187
+      ],
+      "size": [
+        280,
+        120
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "track_data",
+          "name": "track_data",
+          "type": "SAM3_TRACK_DATA",
+          "link": 300
+        }
+      ],
+      "outputs": [
+        {
+          "name": "masks",
+          "type": "MASK",
+          "links": [
+            301
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "SAM3_TrackToMask"
+      },
+      "widgets_values": [
+        "0"
+      ]
+    },
+    {
+      "id": 130,
+      "type": "LoadVideo",
+      "pos": [
+        -480.00006105931425,
+        -3219.999985153187
+      ],
+      "size": [
+        300,
+        360
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            298
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoadVideo"
+      },
+      "widgets_values": [
+        "14307441_960_540_60fps.mp4",
+        "image"
+      ]
+    },
+    {
+      "id": 131,
+      "type": "GetVideoComponents",
+      "pos": [
+        -100.00030214820617,
+        -3219.999985153187
+      ],
+      "size": [
+        240,
+        120
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 298
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            299,
+            306
+          ]
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            309
+          ]
+        },
+        {
+          "name": "fps",
+          "type": "FLOAT",
+          "links": [
+            316
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "GetVideoComponents"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 132,
+      "type": "MaskToImage",
+      "pos": [
+        899.9994901647779,
+        -3219.999985153187
+      ],
+      "size": [
+        240,
+        80
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 301
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            302,
+            308
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "MaskToImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 133,
+      "type": "PreviewImage",
+      "pos": [
+        1239.9999310035673,
+        -3219.999985153187
+      ],
+      "size": [
+        240,
+        520
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 302
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 139,
+      "type": "SAM3_TrackPreview",
+      "pos": [
+        359.99996407476374,
+        -3020.00004228365
+      ],
+      "size": [
+        500,
+        480
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "track_data",
+          "name": "track_data",
+          "type": "SAM3_TRACK_DATA",
+          "link": 307
+        },
+        {
+          "label": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 306
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "SAM3_TrackPreview"
+      },
+      "widgets_values": [
+        0.5,
+        67
+      ]
+    },
+    {
+      "id": 140,
+      "type": "CreateVideo",
+      "pos": [
+        1619.9996899146754,
+        -3200.0000142558238
+      ],
+      "size": [
+        280,
+        140
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 308
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 309
+        },
+        {
+          "name": "fps",
+          "type": "FLOAT",
+          "widget": {
+            "name": "fps"
+          },
+          "link": 316
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            310
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "CreateVideo"
+      },
+      "widgets_values": [
+        30
+      ]
+    },
+    {
+      "id": 141,
+      "type": "SaveVideo",
+      "pos": [
+        1619.9996899146754,
+        -2940.0000027635947
+      ],
+      "size": [
+        480,
+        520
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 310
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1"
+      },
+      "widgets_values": [
+        "video/ComfyUI",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 143,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -119.99996118436593,
+        -2999.999993420986
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 315
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            314
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "bird"
+      ]
+    },
+    {
+      "id": 144,
+      "type": "MarkdownNote",
+      "pos": [
+        -3460.0013391336774,
+        -3420.005995890371
+      ],
+      "size": [
+        540,
+        1210
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "\n📌 ComfyUI Workflow Notes\n\nAuthor: Sharvin Suntoobacus\n\nYouTube Channel: CodeCraftersCorner\n\nPatreon: Support on Patreon\n\n---\n\nℹ️ About This Workflow\n\nThis workflow provides a streamlined implementation of Meta’s Segment Anything Model 3.1 (SAM 3.1) using native ComfyUI nodes. Users will be able to perform high-precision image masking and automated multi-object video tracking via text prompts or visual cues without requiring third-party custom nodes.\n\n---\n\n🎥 Tutorial / Guide\n[Watch on YouTube](https://youtu.be/oMJVkMUqx30)\n\n📥 Model Links (for Local Users)\n**Checkpoints**\n- [sam3.1_multiplex_fp16.safetensors](https://huggingface.co/Comfy-Org/sam3.1/tree/main)\n    \n\n📂 Model Storage Location\nPlace the downloaded files into the following directories within your ComfyUI installation. **Note:** SAM 3.1 is currently utilized via the checkpoints directory in this native setup.\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│ ├── 📂 checkpoints/\n│ │ └── sam3.1_multiplex_fp16.safetensors\n```\n\n💡 Notes\n\n- **Multiple Objects:** Use the syntax `label:number` (e.g., `person:2`) to detect multiple instances of the same class.\n    \n- **Video Trimming:** For optimal performance, trim videos to the specific segments where the subject is present to reduce processing time.\n    \n- **Refinement:** If masks are inaccurate or jagged, increase the **Refine Iterations** or adjust the **Threshold** settings within the SAM3 Detect node.\n    \n- **Requirements:** Ensure your ComfyUI and ComfyUI Manager are updated to the latest versions to access native SAM 3.1 support.\n    \n\nCredit: Please credit Sharvin Suntoobacus and share YouTube Channel Code Crafters Corner when sharing this workflow.\n\nSupport: Your support on Patreon helps me continue creating these guides!\n\n[YouTube Channel](https://www.youtube.com/@codecrafterscorner) | [Patreon Page](https://www.patreon.com/codecrafterscorner)\n\n🙏 Thank you for your support!"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      282,
+      79,
+      0,
+      111,
+      0,
+      "IMAGE"
+    ],
+    [
+      284,
+      116,
+      0,
+      115,
+      0,
+      "MODEL"
+    ],
+    [
+      285,
+      114,
+      0,
+      115,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      286,
+      116,
+      1,
+      114,
+      0,
+      "CLIP"
+    ],
+    [
+      288,
+      115,
+      0,
+      111,
+      1,
+      "MASK"
+    ],
+    [
+      289,
+      79,
+      0,
+      115,
+      1,
+      "IMAGE"
+    ],
+    [
+      290,
+      115,
+      1,
+      117,
+      0,
+      "BOUNDING_BOX"
+    ],
+    [
+      291,
+      79,
+      0,
+      117,
+      1,
+      "IMAGE"
+    ],
+    [
+      293,
+      117,
+      0,
+      118,
+      0,
+      "IMAGE"
+    ],
+    [
+      295,
+      111,
+      0,
+      119,
+      0,
+      "IMAGE"
+    ],
+    [
+      296,
+      115,
+      0,
+      121,
+      0,
+      "MASK"
+    ],
+    [
+      297,
+      121,
+      0,
+      122,
+      0,
+      "IMAGE"
+    ],
+    [
+      298,
+      130,
+      0,
+      131,
+      0,
+      "VIDEO"
+    ],
+    [
+      299,
+      131,
+      0,
+      124,
+      0,
+      "IMAGE"
+    ],
+    [
+      300,
+      124,
+      0,
+      128,
+      0,
+      "SAM3_TRACK_DATA"
+    ],
+    [
+      301,
+      128,
+      0,
+      132,
+      0,
+      "MASK"
+    ],
+    [
+      302,
+      132,
+      0,
+      133,
+      0,
+      "IMAGE"
+    ],
+    [
+      303,
+      116,
+      0,
+      124,
+      1,
+      "MODEL"
+    ],
+    [
+      306,
+      131,
+      0,
+      139,
+      1,
+      "IMAGE"
+    ],
+    [
+      307,
+      124,
+      0,
+      139,
+      0,
+      "SAM3_TRACK_DATA"
+    ],
+    [
+      308,
+      132,
+      0,
+      140,
+      0,
+      "IMAGE"
+    ],
+    [
+      309,
+      131,
+      1,
+      140,
+      1,
+      "AUDIO"
+    ],
+    [
+      310,
+      140,
+      0,
+      141,
+      0,
+      "VIDEO"
+    ],
+    [
+      314,
+      143,
+      0,
+      124,
+      3,
+      "CONDITIONING"
+    ],
+    [
+      315,
+      116,
+      1,
+      143,
+      0,
+      "CLIP"
+    ],
+    [
+      316,
+      131,
+      2,
+      140,
+      2,
+      "FLOAT"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Video",
+      "bounding": [
+        -500,
+        -3440,
+        2620,
+        1043.6
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Image",
+      "bounding": [
+        -2900,
+        -3440,
+        2220,
+        1223.6
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.32349184307606804,
+      "offset": [
+        4250.368822930078,
+        4666.12454251208
+      ]
+    },
+    "frontendVersion": "1.42.15",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
