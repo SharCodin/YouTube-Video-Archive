@@ -1,8 +1,8 @@
 {
   "id": "b4bb0e5b-e328-4ad5-b1e8-12fb0f8c8738",
   "revision": 0,
-  "last_node_id": 188,
-  "last_link_id": 272,
+  "last_node_id": 190,
+  "last_link_id": 275,
   "nodes": [
     {
       "id": 9,
@@ -16,7 +16,7 @@
         580
       ],
       "flags": {},
-      "order": 26,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -94,7 +94,7 @@
         }
       },
       "widgets_values": [
-        "2026-05-06 14-56-54.png",
+        "example.png",
         "image"
       ]
     },
@@ -159,7 +159,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 24,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -235,7 +235,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 25,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -320,7 +320,7 @@
         }
       },
       "widgets_values": [
-        34434441688900,
+        518238215053817,
         "randomize"
       ]
     },
@@ -393,7 +393,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -459,13 +459,13 @@
       "flags": {
         "collapsed": true
       },
-      "order": 23,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 244
+          "link": 275
         },
         {
           "name": "positive",
@@ -522,7 +522,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -588,7 +588,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -653,7 +653,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 22,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -710,7 +710,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -819,7 +819,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -876,7 +876,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -927,7 +927,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -990,7 +990,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            244
+            273
           ]
         }
       ],
@@ -1017,7 +1017,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1080,7 +1080,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1135,7 +1135,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 17,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1242,7 +1242,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -1322,7 +1322,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1369,7 +1369,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 14,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1411,7 +1411,7 @@
       ],
       "size": [
         920,
-        1502.421875
+        1520
       ],
       "flags": {},
       "order": 8,
@@ -1420,10 +1420,89 @@
       "outputs": [],
       "properties": {},
       "widgets_values": [
-        "📌 ComfyUI Workflow Notes\n\n**Author:** Sharvin Suntoobacus\n\n**YouTube Channel:** CodeCraftersCorner\n\n**Patreon:** [Support on Patreon](https://www.patreon.com/)\n\n---\n\n### ℹ️ About This Workflow\n\nThis workflow was created and shared by Sharvin Suntoobacus for the community.\n\nIt enables users to transform simple, abstract sketches or MS Paint scribbles into high-quality 3D renders and photorealistic images. Utilizing the Flux.2 Klein model, users can toggle between styles and use \"Guided Generation\" to precisely control the AI's output or randomize the seed for creative inspiration.\n\n### 🎥 Tutorial / Guide\n\n[Watch on YouTube](https://youtu.be/czveVFSQT3A)\n\n---\n\n### 📥 Model Links (for Local Users)\n\n**diffusion_models**\n\n- [flux-2-klein-9b-fp8.safetensors](https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/resolve/main/flux-2-klein-9b-fp8.safetensors)\n\nUnet\n\n- _Alternative GGUF Version:_ [FLUX.2-klein-9B-GGUF](https://huggingface.co/unsloth/FLUX.2-klein-9B-GGUF/tree/main) (Place in unet folder)\n    \n\n**text_encoders**\n\n- [qwen_3_8b_fp8mixed.safetensors](https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors)\n    \n\n**vae**\n\n- [full_encoder_small_decoder.safetensors](https://huggingface.co/black-forest-labs/FLUX.2-small-decoder/resolve/main/full_encoder_small_decoder.safetensors)\n    \n\n---\n\n### 📂 Model Storage Location\n\nPlace the downloaded files into the following directories within your ComfyUI installation:\n\nPlaintext\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 diffusion_models/\n│   │   └── flux-2-klein-9b-fp8.safetensors\n│   ├── 📂 text_encoders/\n│   │   └── qwen_3_8b_fp8mixed.safetensors\n│   └── 📂 vae/\n│       └── full_encoder_small_decoder.safetensors\n```\n\n---\n\n### 💡 Notes\n\n- **Hardware Compatibility:** If you cannot run the Q8 or FP8 versions, use a lower quantization GGUF model from the link provided above.\n    \n- **Mandatory Input:** The **Load Image** node must contain an initial sketch for the workflow to function.\n    \n- **Refresh Models:** Press **R** on your keyboard inside ComfyUI to refresh the model list after placing files in the folders.\n    \n- **Custom Nodes:** Ensure you have the ComfyUI Manager installed to fetch any missing custom nodes required for this specific Flux.2 Klein setup.\n    \n\n**Credit:** Please credit Sharvin Suntoobacus and share YouTube Channel Code Crafters Corner when sharing this workflow.\n\n**Support:** Your support on Patreon helps me continue creating these guides!\n\n[YouTube Channel](https://www.youtube.com/@CodeCraftersCorner) | [Patreon Page](https://www.patreon.com/)\n\n**🙏 Thank you for your support!**"
+        "📌 ComfyUI Workflow Notes\n\n**Author:** Sharvin Suntoobacus\n\n**YouTube Channel:** CodeCraftersCorner\n\n**Patreon:** [Support on Patreon](https://www.patreon.com/)\n\n---\n\n### ℹ️ About This Workflow\n\nThis workflow was created and shared by Sharvin Suntoobacus for the community.\n\nIt enables users to transform simple, abstract sketches or MS Paint scribbles into high-quality 3D renders and photorealistic images. Utilizing the Flux.2 Klein model, users can toggle between styles and use \"Guided Generation\" to precisely control the AI's output or randomize the seed for creative inspiration.\n\n### 🎥 Tutorial / Guide\n\n[Watch on YouTube](https://youtu.be/czveVFSQT3A)\n\n---\n\n### 📥 Model Links (for Local Users)\n\n**diffusion_models**\n\n- [flux-2-klein-9b-fp8.safetensors](https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8)\n\nUnet\n\n- _Alternative GGUF Version:_ [FLUX.2-klein-9B-GGUF](https://huggingface.co/unsloth/FLUX.2-klein-9B-GGUF/tree/main) (Place in unet folder)\n    \n\n**text_encoders**\n\n- [qwen_3_8b_fp8mixed.safetensors](https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors)\n    \n\n**vae**\n\n- [full_encoder_small_decoder.safetensors](https://huggingface.co/black-forest-labs/FLUX.2-small-decoder/resolve/main/full_encoder_small_decoder.safetensors)\n    \n\n---\n\n### 📂 Model Storage Location\n\nPlace the downloaded files into the following directories within your ComfyUI installation:\n\nPlaintext\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 diffusion_models/\n│   │   └── flux-2-klein-9b-fp8.safetensors\n│   ├── 📂 text_encoders/\n│   │   └── qwen_3_8b_fp8mixed.safetensors\n│   └── 📂 vae/\n│       └── full_encoder_small_decoder.safetensors\n```\n\n---\n\n### 💡 Notes\n\n- **Hardware Compatibility:** If you cannot run the Q8 or FP8 versions, use a lower quantization GGUF model from the link provided above.\n    \n- **Mandatory Input:** The **Load Image** node must contain an initial sketch for the workflow to function.\n    \n- **Refresh Models:** Press **R** on your keyboard inside ComfyUI to refresh the model list after placing files in the folders.\n    \n- **Custom Nodes:** Ensure you have the ComfyUI Manager installed to fetch any missing custom nodes required for this specific Flux.2 Klein setup.\n    \n\n**Credit:** Please credit Sharvin Suntoobacus and share YouTube Channel Code Crafters Corner when sharing this workflow.\n\n**Support:** Your support on Patreon helps me continue creating these guides!\n\n[YouTube Channel](https://www.youtube.com/@CodeCraftersCorner) | [Patreon Page](https://www.patreon.com/)\n\n**🙏 Thank you for your support!**"
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 189,
+      "type": "UNETLoader",
+      "pos": [
+        -640,
+        -300
+      ],
+      "size": [
+        440,
+        120
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            274
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.21.0",
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "flux-2-klein-9b-fp8.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 190,
+      "type": "ComfySwitchNode",
+      "pos": [
+        -140,
+        -280
+      ],
+      "size": [
+        270,
+        124
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_false",
+          "type": "MODEL",
+          "link": 274
+        },
+        {
+          "name": "on_true",
+          "type": "MODEL",
+          "link": 273
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "MODEL",
+          "links": [
+            275
+          ]
+        }
+      ],
+      "title": "Use GGUF",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.21.0",
+        "Node name for S&R": "ComfySwitchNode"
+      },
+      "widgets_values": [
+        false
+      ]
     }
   ],
   "links": [
@@ -1596,14 +1675,6 @@
       "CONDITIONING"
     ],
     [
-      244,
-      168,
-      0,
-      158,
-      0,
-      "MODEL"
-    ],
-    [
       257,
       179,
       0,
@@ -1698,22 +1769,46 @@
       178,
       1,
       "STRING"
+    ],
+    [
+      273,
+      168,
+      0,
+      190,
+      1,
+      "MODEL"
+    ],
+    [
+      274,
+      189,
+      0,
+      190,
+      0,
+      "MODEL"
+    ],
+    [
+      275,
+      190,
+      0,
+      158,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
-    "frontendVersion": "1.43.17",
+    "frontendVersion": "1.43.18",
     "workflowRendererVersion": "LG",
     "VHS_latentpreview": false,
     "VHS_latentpreviewrate": 0,
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 0.4665073802097333,
+      "scale": 0.5644739300537778,
       "offset": [
-        2054.633164170116,
-        569.1537363086163
+        954.4349939432677,
+        827.0860999005115
       ]
     },
     "ue_links": []
