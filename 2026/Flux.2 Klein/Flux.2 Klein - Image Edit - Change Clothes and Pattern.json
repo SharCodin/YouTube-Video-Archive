@@ -2,7 +2,7 @@
   "id": "ffc1baf6-9909-4aad-b624-aa6678c03d18",
   "revision": 0,
   "last_node_id": 208,
-  "last_link_id": 313,
+  "last_link_id": 315,
   "nodes": [
     {
       "id": 9,
@@ -370,7 +370,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 27,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -499,7 +499,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 26,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -565,7 +565,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 24,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -630,7 +630,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 28,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -687,13 +687,13 @@
       "flags": {
         "collapsed": true
       },
-      "order": 23,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
           "name": "image",
           "type": "IMAGE",
-          "link": 313
+          "link": 314
         }
       ],
       "outputs": [
@@ -797,7 +797,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 29,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -892,7 +892,7 @@
         }
       },
       "widgets_values": [
-        "Replace the garment from image 1 with the dress from image 2. do not modify anything else. hair tied up."
+        "Replace the garment from image 1 with the shirt from image 2. do not modify anything else."
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -960,7 +960,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 25,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1050,7 +1050,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1177,7 +1177,7 @@
         740
       ],
       "flags": {},
-      "order": 19,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1230,7 +1230,7 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "dress"
+        "shirt"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -1293,7 +1293,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -1313,7 +1313,7 @@
           "type": "IMAGE",
           "links": [
             312,
-            313
+            315
           ]
         }
       ],
@@ -1338,7 +1338,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1375,7 +1375,7 @@
         740
       ],
       "flags": {},
-      "order": 22,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -1413,7 +1413,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            272
+            314
           ]
         },
         {
@@ -1422,6 +1422,7 @@
           "links": null
         }
       ],
+      "title": "Clothes",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.8.2",
@@ -1440,7 +1441,7 @@
         }
       },
       "widgets_values": [
-        "Ernie-Image-Turbo_00001_.png",
+        "z-image_00066_.png",
         "image"
       ]
     },
@@ -1458,13 +1459,13 @@
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
           "name": "pixels",
           "type": "IMAGE",
-          "link": 272
+          "link": 315
         },
         {
           "name": "vae",
@@ -1515,7 +1516,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -1572,7 +1573,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -1695,6 +1696,7 @@
           "links": []
         }
       ],
+      "title": "Character",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.8.2",
@@ -1713,7 +1715,7 @@
         }
       },
       "widgets_values": [
-        "2026-05-07 17-35-42.png",
+        "2026-05-14 16-11-17.png",
         "image"
       ]
     },
@@ -1726,7 +1728,7 @@
       ],
       "size": [
         820,
-        1360.859375
+        1380
       ],
       "flags": {},
       "order": 9,
@@ -1983,14 +1985,6 @@
       "MASK"
     ],
     [
-      272,
-      190,
-      0,
-      191,
-      0,
-      "IMAGE"
-    ],
-    [
       273,
       163,
       0,
@@ -2071,10 +2065,18 @@
       "IMAGE"
     ],
     [
-      313,
-      185,
+      314,
+      190,
       0,
       162,
+      0,
+      "IMAGE"
+    ],
+    [
+      315,
+      185,
+      0,
+      191,
       0,
       "IMAGE"
     ]
@@ -2095,17 +2097,17 @@
   ],
   "config": {},
   "extra": {
-    "frontendVersion": "1.43.17",
+    "frontendVersion": "1.43.18",
     "workflowRendererVersion": "LG",
     "VHS_latentpreview": false,
     "VHS_latentpreviewrate": 0,
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 0.28966437973668785,
+      "scale": 0.28966437973668846,
       "offset": [
-        2964.849110063622,
-        1591.238550696068
+        2541.420514997253,
+        1548.2237908795319
       ]
     },
     "ue_links": []
